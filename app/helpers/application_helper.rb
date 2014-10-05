@@ -1,13 +1,13 @@
 module ApplicationHelper
   def head
-    render 'layouts/head'
+    render 'layouts/splash/head'
   end
 
   def scripts
-    render 'layouts/scripts'
+    render 'layouts/splash/scripts'
   end
 
   def browsehappy
-    render 'layouts/browsehappy'
+    render 'layouts/splash/browsehappy'
   end
 end

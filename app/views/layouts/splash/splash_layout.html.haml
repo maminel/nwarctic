@@ -1,0 +1,9 @@
+!!!
+%html.no-js{:lang => "en"}
+  = head
+  %body
+    = browsehappy
+    #main{:role => "main"}
+      = yield
+    = render 'layouts/splash/footer'
+    = scripts

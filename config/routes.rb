@@ -1,13 +1,11 @@
 Rails.application.routes.draw do
-  get 'star/index'
+  root :to => 'splash#index'
 
-  get 'atc/index'
-
-  get 'splash/index'
-
-  get 'pages/about'
-
-  get 'pages/contact'
+  get 'home',     to: 'splash#index',  as: :home
+  get 'atc',      to: 'atc#index',     as: :atc
+  get 'star',     to: 'star#index',    as: :star
+  get 'about',    to: 'pages#about',   as: :about
+  get 'contact',  to: 'pages#contact', as: :contact
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
