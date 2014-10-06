@@ -1,14 +1,31 @@
 %nav{:role => "navigation"}
-  %ul#nav
-    %li
-      = link_to 'Home', '/', :title => ''
-    %li
-      = link_to 'About Us', '/', :title => ''
-    %li
-      = link_to 'Admissions', '/', :title => ''
-    %li
-      = link_to 'Academics', '/', :title => ''
-    %li
-      = link_to 'Career Pathways', '/', :title => ''
-    %li
-      = link_to 'Student Life', '/', :title => ''
+  %div
+    = link_to 'Home', '/', :title => ''
+  %div
+    = link_to 'About Us', '/', :title => ''
+    %ul#subnav
+      %li Partnerships
+      %li Support Us
+      %li Who We Are
+  %div
+    = link_to 'Admissions', '/', :title => ''
+    %ul#subnav
+      %li Apply
+      %li Financial Aid
+      %li Training Costs
+  %div
+    = link_to 'Academics', '/', :title => ''
+    %ul#subnav
+      %li Programs
+      %li What We Offer
+  %div
+    = link_to 'Career Pathways', '/', :title => ''
+    %ul#subnav
+      %li Workforce Development
+      %li Job Opportunities
+  %div
+    = link_to 'Student Life', '/', :title => ''
+    %ul#subnav
+      %li Community
+      %li Activities
+      %li Safe Positive Structure
