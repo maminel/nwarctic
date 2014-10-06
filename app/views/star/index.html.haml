@@ -1,2 +1,54 @@
-%h1 Star#index
-%p Find me in app/views/star/index.html.haml
+- content_for :title do
+  Star Home
+
+%section#hero
+  #carousel
+    .slide.active
+      .slide-block
+        %h1 Alaska's First and Only Combined Residential High School and Postsecondary Institution
+    .slide
+      .slide-block
+        %h1 Getting Students into Their Career Pathways Early
+    .slide
+      .slide-block
+        %h1 A One-Stop Shop for High School and Career Training
+    .slide
+      .slide-block
+        %h1 We Prepare Students for Long-Term High-Paying Careers
+    .slide
+      .slide-block
+        %h1 Interactive Real-Time Video Courses
+    .slide
+      .slide-block
+        %h1 Apply for Our Ready (2 weeks) and Mini (1 week) Star Programs
+        %a{:href => '#', :title => ''} Apply Now
+    .slide
+      .slide-block
+        %h1 The Star Community, a Network for Life
+        %a{:href => '#', :title => ''} Learn More
+    .slide
+      .slide-block
+        %h1 We Offer the Best of Both Worlds:
+        %p A great education and job preparation right here at home.
+        %a{:href => '#', :title => ''} Apply Now
+    .slide
+      .slide-block
+        %h1 TO PARENTS AND FAMILIES...
+        %ul
+          %li Star is a great opportunity but still close to home
+          %li We believe in regular communication between you, your child and their staff advisor
+          %li We provide a safe and secure environment with positive structure
+        %a{:href => '#', :title => ''} Learn More
+
+  = link_to '', '#', :title => 'Previous', :id => 'prev', :class => 'control'
+  = link_to '', '#', :title => 'Next', :id => 'next', :class => 'control'
+
+  #pager
+    %a.selected{href: "#"}
+      %span 1
+    %a{href: "#"}
+      %span 2
+    %a{href: "#"}
+      %span 3
+    %a{href: "#"}
+      %span 4

@@ -1,2 +1,85 @@
-%h1 Atc#index
-%p Find me in app/views/atc/index.html.haml
+- content_for :title do
+  ATC Home
+
+%section#hero
+  #carousel
+    .slide.active
+      .slide-block
+        %h1 Alaska's Best Secret
+        %h2 Why?
+        %ol
+          %li An amazing facility
+          %li Right here in your backyard, rural Alaska
+          %li GUARANTEED!
+    .slide
+      .slide-block
+        %h1 You Can Do It!
+        %p We're here to prepare you for a high demand, high-paying career.
+        %a{:href => '#', :title => ''} Apply Now
+    .slide
+      .slide-block
+        %h1 You Can Reach Employee Standards
+        %p We know how to help.
+    .slide
+      .slide-block
+        %h1 High Demand High-Paying Careers
+    .slide
+      .slide-block
+        %h1 Career Training for All Alaskans
+        %ul
+          %li Construction
+          %li Culinary
+          %li Education
+          %li Healthcare
+          %li Office Occupation
+          %li Process Technology
+          %li Adult Basic Education
+        %a{:href => '#', :title => ''} Learn More
+    .slide
+      .slide-block
+        %h1 We Live Train and Work in Rural Alaska
+    .slide
+      .slide-block
+        %h1 We Are a Training Center for All Alaskans
+        %p State of Alaska Department of Labor SEAL
+        %p Business and Industry Partnerships:
+        %ul
+          %li Tech Alaska SEAL
+          %li Shell SEAL
+          %li Aqqaluk Trust SEAL
+    .slide
+      .slide-block
+        %h1 ATC is for People Who Value Hard work and Want to Advance
+    .slide
+      .slide-block
+        %h1 How Do You Invest in Yourself?
+        %ol
+          %li
+            Choose a pathway (Followed by&nbsp;
+            %a{:href => '#', :title => ''}> call to action
+            )
+          %li
+            Apply (Followed by&nbsp;
+            %a{:href => '#', :title => ''}> call to action
+            )
+    .slide
+      .slide-block
+        %h1 GUARANTEED
+        %p If you leave our training and your employer feels you need more training in an area where we trained you, we will train you for free!
+    .slide
+      .slide-block
+        %h1 JOBS
+        %p We're all about jobs, preparing students for the workforce
+
+  = link_to '', '#', :title => 'Previous', :id => 'prev', :class => 'control'
+  = link_to '', '#', :title => 'Next', :id => 'next', :class => 'control'
+
+  #pager
+    %a.selected{href: "#"}
+      %span 1
+    %a{href: "#"}
+      %span 2
+    %a{href: "#"}
+      %span 3
+    %a{href: "#"}
+      %span 4
