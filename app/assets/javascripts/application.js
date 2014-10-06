@@ -13,4 +13,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require jquery.carouFredSel-6.2.1-packed
 //= require custom

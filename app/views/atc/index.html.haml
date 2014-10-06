@@ -2,7 +2,7 @@
   ATC Home
 
 %section#hero
-  #carousel
+  #carousel_atc
     .slide.active
       .slide-block
         %h1 Alaska's Best Secret
@@ -71,15 +71,7 @@
         %h1 JOBS
         %p We're all about jobs, preparing students for the workforce
 
-  = link_to '', '#', :title => 'Previous', :id => 'prev', :class => 'control'
-  = link_to '', '#', :title => 'Next', :id => 'next', :class => 'control'
+  = link_to 'Previous', '#', :title => 'Previous', :id => 'prev', :class => 'control'
+  = link_to 'Next', '#', :title => 'Next', :id => 'next', :class => 'control'
 
   #pager
-    %a.selected{href: "#"}
-      %span 1
-    %a{href: "#"}
-      %span 2
-    %a{href: "#"}
-      %span 3
-    %a{href: "#"}
-      %span 4

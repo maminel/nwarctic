@@ -2,7 +2,7 @@
   Star Home
 
 %section#hero
-  #carousel
+  #carousel_star
     .slide.active
       .slide-block
         %h1 Alaska's First and Only Combined Residential High School and Postsecondary Institution
@@ -40,15 +40,7 @@
           %li We provide a safe and secure environment with positive structure
         %a{:href => '#', :title => ''} Learn More
 
-  = link_to '', '#', :title => 'Previous', :id => 'prev', :class => 'control'
-  = link_to '', '#', :title => 'Next', :id => 'next', :class => 'control'
+  = link_to 'Previous', '#', :title => 'Previous', :id => 'prev', :class => 'control'
+  = link_to 'Next', '#', :title => 'Next', :id => 'next', :class => 'control'
 
   #pager
-    %a.selected{href: "#"}
-      %span 1
-    %a{href: "#"}
-      %span 2
-    %a{href: "#"}
-      %span 3
-    %a{href: "#"}
-      %span 4
