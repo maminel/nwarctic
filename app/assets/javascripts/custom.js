@@ -50,7 +50,7 @@ $(function() {
             }
         },
 
-        // auto                : false,
+        auto                : false,
         prev: {
             button          : "#prev",
             key             : "left"
