@@ -2,13 +2,13 @@ $(function() {
     $('#carousel_atc').carouFredSel({
         width: "100%",
         height: "100%",
-        // items: 1,
-        items: {
-            visible: 1,
-            start: -1
-        },
+        items: 1,
+        // items: {
+        //     visible: 1,
+        //     start: 0
+        // },
         scroll: {
-            duration: 1000,
+            duration: 1500,
             onBefore: function( data ) {
                 data.items.visible.children().css( 'opacity', 0 ).delay( 200 ).fadeTo( 400, 1 );
                 data.items.old.children().fadeTo( 400, 0 );
@@ -37,13 +37,13 @@ $(function() {
     $('#carousel_star').carouFredSel({
         width: "100%",
         height: "100%",
-        // items: 1,
-        items: {
-            visible: 1,
-            start: -1
-        },
+        items: 1,
+        // items: {
+        //     visible: 1,
+        //     start: 0
+        // },
         scroll: {
-            duration: 1000,
+            duration: 1500,
             onBefore: function( data ) {
                 data.items.visible.children().css( 'opacity', 0 ).delay( 200 ).fadeTo( 400, 1 );
                 data.items.old.children().fadeTo( 400, 0 );
