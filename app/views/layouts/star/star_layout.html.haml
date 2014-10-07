@@ -2,11 +2,13 @@
 %html.no-js{:lang => "en"}
   = head
   %body
-    = browsehappy
-    %header{:role => "banner"}
-      = render 'layouts/star/logo'
-      = render 'layouts/star/navigation'
-    #main{:role => "main"}
-      = yield
-    = render 'layouts/star/footer'
+    .wrapper
+      = browsehappy
+      %header{:role => "banner"}
+        .container
+          = render 'layouts/star/logo'
+          = render 'layouts/star/navigation'
+      #main{:role => "main"}
+        = yield
+      = render 'layouts/star/footer'
     = scripts
