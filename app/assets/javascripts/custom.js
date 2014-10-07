@@ -15,7 +15,7 @@ $(function() {
             }
         },
 
-        auto                : false,
+        // auto                : false,
         prev: {
             button          : "#prev",
             key             : "left"
@@ -50,7 +50,7 @@ $(function() {
             }
         },
 
-        auto                : false,
+        // auto                : false,
         prev: {
             button          : "#prev",
             key             : "left"
