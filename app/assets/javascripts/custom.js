@@ -8,14 +8,14 @@ $(function() {
         //     start: 0
         // },
         scroll: {
-            duration: 1500,
+            duration: 1000,
+            pauseOnHover: true,
             onBefore: function( data ) {
                 data.items.visible.children().css( 'opacity', 0 ).delay( 200 ).fadeTo( 400, 1 );
                 data.items.old.children().fadeTo( 400, 0 );
             }
         },
-
-        // auto                : false,
+        auto                : true,
         prev: {
             button          : "#prev",
             key             : "left"
@@ -25,8 +25,7 @@ $(function() {
             key             : "right"
         },
         pagination: {
-            container       : "#pager",
-            deviation       : 1
+            container       : "#pager"
         },
         swipe: {
           onMouse           : true,
@@ -43,14 +42,14 @@ $(function() {
         //     start: 0
         // },
         scroll: {
-            duration: 1500,
+            duration: 1000,
+            pauseOnHover: true,
             onBefore: function( data ) {
                 data.items.visible.children().css( 'opacity', 0 ).delay( 200 ).fadeTo( 400, 1 );
                 data.items.old.children().fadeTo( 400, 0 );
             }
         },
-
-        // auto                : false,
+        auto                : true,
         prev: {
             button          : "#prev",
             key             : "left"
@@ -60,8 +59,7 @@ $(function() {
             key             : "right"
         },
         pagination: {
-            container       : "#pager",
-            deviation       : 1
+            container       : "#pager"
         },
         swipe: {
           onMouse           : true,
