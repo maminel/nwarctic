@@ -1,31 +1,32 @@
 %nav{:role => "navigation"}
   %div
-    = link_to 'Home', '/', :title => ''
+    = link_to 'Home', atc_path, :title => ''
   %div
-    = link_to 'About Us', '/', :title => ''
+    = link_to 'About Us', atc_about_us_path, :title => ''
     %ul#subnav
-      %li Partnerships
-      %li Support Us
-      %li Who We Are
+      %li= link_to 'Who We Are', atc_who_we_are_path, :title => ''
+      %li= link_to 'Partnerships', atc_partnerships_path, :title => ''
+      %li= link_to 'Support Us', atc_support_us_path, :title => ''
   %div
-    = link_to 'Admissions', '/', :title => ''
+    = link_to 'Admissions', atc_admissions_path, :title => ''
     %ul#subnav
-      %li Apply
-      %li Financial Aid
-      %li Training Costs
+      %li= link_to 'Apply', atc_apply_path, :title => ''
+      %li= link_to 'Financial Aid', atc_financial_aid_path, :title => ''
+      %li= link_to 'Training Costs', atc_costs_path, :title => ''
   %div
-    = link_to 'Academics', '/', :title => ''
+    = link_to 'Academics', atc_academics_path, :title => ''
     %ul#subnav
-      %li Programs
-      %li What We Offer
+      %li= link_to 'Programs', atc_programs_path, :title => ''
+      %li= link_to 'What We Offer', atc_what_we_offer_path, :title => ''
   %div
-    = link_to 'Career Pathways', '/', :title => ''
+    = link_to 'Career Pathways', atc_careers_path, :title => ''
     %ul#subnav
-      %li Workforce Development
-      %li Job Opportunities
+      %li= link_to 'Workforce Development', atc_development_path, :title => ''
+      %li= link_to 'Job Opportunities', atc_jobs_path, :title => ''
   %div
-    = link_to 'Student Life', '/', :title => ''
+    = link_to 'Student Life', atc_student_life_path, :title => ''
     %ul#subnav
-      %li Community
-      %li Activities
-      %li Safe Positive Structure
+      %li= link_to 'Safe Positive Structure', atc_safe_path, :title => ''
+      %li= link_to 'Dormitory', atc_dormitory_path, :title => ''
+      %li= link_to 'Community and Culture', atc_community_path, :title => ''
+      %li= link_to 'Activities', atc_activities_path, :title => ''
