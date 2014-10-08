@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   get 'costs',         to: 'atc#career_costs',        as: :atc_costs
   get 'academics',     to: 'atc#academics',           as: :atc_academics
   get 'programs',      to: 'atc#programs',            as: :atc_programs
-  get 'offer',         to: 'atc#what_we_offer',       as: :atc_what_we_offer
+  get 'offer',         to: 'atc#offer',               as: :atc_offer
   get 'careers',       to: 'atc#student_careers',     as: :atc_careers
   get 'development',   to: 'atc#development',         as: :atc_development
   get 'jobs',          to: 'atc#student_jobs',        as: :atc_jobs
@@ -36,7 +36,7 @@ Rails.application.routes.draw do
   get 'development',   to: 'star#development',        as: :star_development
   get 'academics',     to: 'star#academics',          as: :star_academics
   get 'schools',       to: 'star#schools',            as: :star_schools
-  get 'offer',         to: 'star#what_we_offer',      as: :star_what_we_offer
+  get 'offer',         to: 'star#offer',              as: :star_offer
   get 'student_life',  to: 'star#student_life',       as: :star_student_life
   get 'safe',          to: 'star#positive_structure', as: :star_safe
   get 'dormitory',     to: 'star#dormitory',          as: :star_dormitory
