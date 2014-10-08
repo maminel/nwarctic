@@ -10,17 +10,17 @@ Rails.application.routes.draw do
   get 'admissions',    to: 'atc#admissions',          as: :atc_admissions
   get 'apply',         to: 'atc#apply',               as: :atc_apply
   get 'financial_aid', to: 'atc#financial_aid',       as: :atc_financial_aid
-  get 'costs',         to: 'atc#career_costs',        as: :atc_costs
+  get 'costs',         to: 'atc#costs',               as: :atc_costs
   get 'academics',     to: 'atc#academics',           as: :atc_academics
   get 'programs',      to: 'atc#programs',            as: :atc_programs
   get 'offer',         to: 'atc#offer',               as: :atc_offer
-  get 'careers',       to: 'atc#student_careers',     as: :atc_careers
+  get 'careers',       to: 'atc#careers',             as: :atc_careers
   get 'development',   to: 'atc#development',         as: :atc_development
-  get 'jobs',          to: 'atc#student_jobs',        as: :atc_jobs
+  get 'jobs',          to: 'atc#jobs',                as: :atc_jobs
   get 'student_life',  to: 'atc#student_life',        as: :atc_student_life
-  get 'safe',          to: 'atc#positive_structure',  as: :atc_safe
+  get 'safe',          to: 'atc#safe',                as: :atc_safe
   get 'dormitory',     to: 'atc#dormitory',           as: :atc_dormitory
-  get 'community',     to: 'atc#community_culture',   as: :atc_community
+  get 'community',     to: 'atc#community',           as: :atc_community
   get 'activities',    to: 'atc#activities',          as: :atc_activities
 
   get 'star',          to: 'star#index',              as: :star
@@ -38,9 +38,9 @@ Rails.application.routes.draw do
   get 'schools',       to: 'star#schools',            as: :star_schools
   get 'offer',         to: 'star#offer',              as: :star_offer
   get 'student_life',  to: 'star#student_life',       as: :star_student_life
-  get 'safe',          to: 'star#positive_structure', as: :star_safe
+  get 'safe',          to: 'star#safe',               as: :star_safe
   get 'dormitory',     to: 'star#dormitory',          as: :star_dormitory
-  get 'community',     to: 'star#community_culture',  as: :star_community
+  get 'community',     to: 'star#community',          as: :star_community
   get 'activities',    to: 'star#activities',         as: :star_activities
 
   get 'about',         to: 'pages#about',             as: :about
