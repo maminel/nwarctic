@@ -7,4 +7,8 @@ Rails.application.config.assets.version = '1.0'
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
 # Rails.application.config.assets.precompile += %w( search.js )
 
-Rails.application.config.assets.precompile += %w( modernizr-2.8.3.min.js )
+Rails.application.config.assets.precompile += %w( modernizr-2.8.3.min.js mobile.css mobile.js )
+
+# Precompile *all* assets, except those that start with underscore per:
+# http://blog.55minutes.com/2012/01/getting-compass-to-work-with-rails-31-and-32/
+# Rails.application.config.assets.precompile << /(^[^_\/]|\/[^_])[^\/]*$/
