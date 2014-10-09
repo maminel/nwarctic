@@ -8,5 +8,6 @@ class PagesController < ApplicationController
   end
 
   def design
+    @device = request.env['mobvious.device_type']
   end
 end

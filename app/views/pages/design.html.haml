@@ -2,22 +2,21 @@
   Design
 =# currently_at ''
 
-%section.panel#design-1
+%section.panel#design
   .container
-    .design-1
-      %h1 Design Measurements
-      %p An article I wrote:
+    .design
+      %h2 Measurements
       %a{:href => 'http://www.chrismaxwell.com/what-devices-should-you-target-with-breakpoints', :title => ''} What Devices Should You Target with Breakpoints?
-      %p But essentially:
+      %br
       %ul
         %li 320px (iPhone portrait, default)
         %li 480px (iPhone landscape)
         %li 768px (iPad portrait)
         %li 1024px (iPad landscape)
         %li 1087px (Desktops)
+      %p Resize and watch column backgrounds/RWD Marker.
 
-%section.panel#design-2
-  .container
-    .design-2
-      %h1 Resize and watch this panel.
-
+      %h2 Mobvious Test
+      %p
+        This device is a:&nbsp;
+        %strong= device_test
