@@ -11,6 +11,8 @@ gem 'jbuilder',     '2.1.3'
 gem 'sdoc',         '0.4.0', group: :doc
 
 gem 'haml-rails'
+gem 'mobvious'
+gem 'mobvious-rails'
 
 # Compass specific gems.
 gem 'compass-rails'
