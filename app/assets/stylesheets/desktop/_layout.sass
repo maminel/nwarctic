@@ -19,24 +19,25 @@ html
 
 body
   background-color: $bg-body
-  &:after
-    +rwd-marker
+  // &:after
+  //   +rwd-marker
 
 .wrapper
-  margin: 0 auto
-  overflow: hidden
+  // margin: 0 auto
+  // overflow: hidden
+  @include container(1140px)
 
 .container
-  +container($total-columns, $break9, $break12)
+  // +container($total-columns, $break9, $break12)
 
-.design-1, .design-2
-  +susy-grid-background
+.design
+  // +susy-grid-background
 
-  +at-breakpoint($break9)
-    +susy-grid-background
+  // +at-breakpoint($break9)
+  //   +susy-grid-background
 
-  +at-breakpoint($break12)
-    +susy-grid-background
+  // +at-breakpoint($break12)
+  //   +susy-grid-background
 
 audio,
 canvas,
@@ -45,8 +46,8 @@ svg,
 video
   vertical-align: middle
 
-*, *:before, *:after
-  +box-sizing(border-box)
+// *, *:before, *:after
+//   +box-sizing(border-box)
 
 
 /* Header

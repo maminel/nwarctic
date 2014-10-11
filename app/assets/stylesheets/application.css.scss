@@ -6,13 +6,13 @@
 /* Susy Grid
   ----------------------- */
 
-$total-columns:     4;
-$column-width:      $scale11;
-$gutter-width:      $scale;
-$grid-padding:      $gutter-width;
+// $total-columns:     4;
+// $column-width:      $scale11;
+// $gutter-width:      $scale;
+// $grid-padding:      $gutter-width;
 
-$break9:            9;
-$break12:           12;
+// $break9:            9;
+// $break12:           12;
 
 
 /* MIXINS
@@ -34,6 +34,19 @@ ol, ul {
 /* BASIC STRUCTURE
   ============================================================================ */
 @import "susy";
+
+$susy: (
+  columns: 12,
+  global-box-sizing: border-box,
+  debug: (
+    image: show,
+    color: rgba(#66b3dc, 0.25),
+    output: background,
+    toggle: top right
+    )
+  );
+
+@include border-box-sizing;
 @import "desktop/layout";
 
 
