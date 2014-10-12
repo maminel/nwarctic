@@ -27,12 +27,11 @@ ol, ul {
 
 $susy: (
   columns: 6,
-  // gutter: 10px,
   global-box-sizing: border-box,
   debug: (
     image: show,
     color: rgba(#66b3dc, 0.25),
-    output: background,
+    output: overlay,
     toggle: top right
     )
   );
