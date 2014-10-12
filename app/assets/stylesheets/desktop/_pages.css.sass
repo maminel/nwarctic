@@ -73,26 +73,26 @@
 //   +at-breakpoint($break6)
 //     +hidden
 
-// // For toggling between phone number markup
+// For toggling between phone number markup
 
-// .callto
-//   position: absolute
-//   top: -9999px
-//   left: -9999px
-//   +hidden
+.callto
+  position: absolute
+  top: -9999px
+  left: -9999px
+  +hidden
 
-// +at-breakpoint($break9)
-//   .tel
-//     position: absolute
-//     top: -9999px
-//     left: -9999px
-//     +hidden
++breakpoint($tablet)
+  .tel
+    position: absolute
+    top: -9999px
+    left: -9999px
+    +hidden
 
-//   .callto
-//     position: relative
-//     top: auto
-//     left: auto
-//     +reveal-hidden-inline
+  .callto
+    position: relative
+    top: auto
+    left: auto
+    +reveal-hidden-inline
 
 
 // /* Pages
