@@ -23,6 +23,7 @@ ol, ul {
 /* BASIC STRUCTURE
   ============================================================================ */
 @import "susy";
+@import "breakpoint";
 
 $susy: (
   columns: 6,
@@ -41,7 +42,6 @@ $susy: (
 $tablet:  660px;
 $desktop: 980px;
 
-@import "breakpoint";
 @import "desktop/layout";
 
 
