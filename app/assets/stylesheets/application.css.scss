@@ -3,17 +3,6 @@
 @import "modular_scale";
 @import "define";
 
-/* Susy Grid
-  ----------------------- */
-
-// $total-columns:     4;
-// $column-width:      $scale11;
-// $gutter-width:      $scale;
-// $grid-padding:      $gutter-width;
-
-// $break9:            9;
-// $break12:           12;
-
 
 /* MIXINS
   ============================================================================ */
@@ -36,7 +25,8 @@ ol, ul {
 @import "susy";
 
 $susy: (
-  columns: 12,
+  columns: 6,
+  // gutter: 10px,
   global-box-sizing: border-box,
   debug: (
     image: show,
@@ -47,6 +37,11 @@ $susy: (
   );
 
 @include border-box-sizing;
+
+$tablet:  660px;
+$desktop: 980px;
+
+@import "breakpoint";
 @import "desktop/layout";
 
 

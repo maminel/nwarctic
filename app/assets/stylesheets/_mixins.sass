@@ -47,7 +47,7 @@
   -----------------------
 
 @mixin rwd-marker($box: 75px, $font: 50px)
-  content: "4"
+  content: "6"
   position: absolute
   top: $box
   right: $box
@@ -59,37 +59,37 @@
   +border-radius(5px)
   +opacity(.50)
 
-  // +at-breakpoint($break5)
+  // +breakpoint($)
   //   background-color: purple
   //   content: "5"
 
-  // +at-breakpoint($break6)
+  // +breakpoint($)
   //   background-color: blue
   //   content: "6"
 
-  // +at-breakpoint($break7)
+  // +breakpoint($)
   //   background-color: green
   //   content: "7"
 
-  // +at-breakpoint($break8)
+  // +breakpoint($)
   //   background-color: yellow
   //   content: "8"
 
-  // +at-breakpoint($break9)
-  //   background-color: aqua
-  //   content: "9"
+  +breakpoint($tablet)
+    background-color: aqua
+    content: "9"
 
-  // +at-breakpoint($break10)
+  // +breakpoint($)
   //   background-color: brown
   //   content: "10"
 
-  // +at-breakpoint($break11)
+  // +breakpoint($)
   //   background-color: violet
   //   content: "11"
 
-  // +at-breakpoint($break12)
-  //   background-color: orange
-  //   content: "12"
+  +breakpoint($desktop)
+    background-color: orange
+    content: "12"
 
 
 /* Box Shadows

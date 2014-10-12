@@ -8,9 +8,9 @@
   -# %title= content_for?(:title) ? ("XXX - " + yield(:title)) : "XXX"
 
   %meta{name: "description", content: "XXX"}
-  %meta{name: "viewport", content: "width=device-width"}
+  -# %meta{name: "viewport", content: "width=device-width"}
   -# to match layout to device width and set zoom level to 1:1
-  -# %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
+  %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
 
   = favicon_link_tag '/favicon.ico'
   = favicon_link_tag '/apple-touch-icon-precomposed.png', rel: 'apple-touch-icon-precomposed', type: 'image/png'
