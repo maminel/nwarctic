@@ -19,8 +19,8 @@ html
 
 body
   background-color: $bg-body
-  &:after
-    +rwd-marker
+  // &:after
+  //   +rwd-marker
 
 #splash
   background-color: $bg-body-splash
@@ -86,3 +86,7 @@ header
     p
       margin-top: 5px
       color: $font-black
+
+  +breakpoint($tablet)
+    footer
+      margin-top: 40px

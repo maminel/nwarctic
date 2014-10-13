@@ -2,16 +2,26 @@
   position: absolute
   top: 50%
   left: 50%
-  width: 294px
-  height: 294px
-  margin-top: -220px
-  margin-left: -147px
+  width: 151px
+  height: 151px
+  margin-top: -170px
+  margin-left: -75px
+
+  +breakpoint($tablet)
+    width: 294px
+    height: 294px
+    margin-top: -220px
+    margin-left: -147px
 
   .atc-logo, .star-logo
     position: relative
     display: block
-    width: 294px
-    height: 146px
+    width: 151px
+    height: 75px
+
+    +breakpoint($tablet)
+      width: 294px
+      height: 146px
 
     .adults, .highschool
       display: none
@@ -22,30 +32,55 @@
         +link-colors($font-gray, $link-hover, $font-gray, $font-gray, $font-gray)
 
   .atc-logo
-    margin-bottom: 2px
-    background: image-url("logos/splash-logos.png") 0 0 no-repeat
-
+    margin-bottom: 1px
+    background: image-url("logos/splash-logos-sm.png") 0 0 no-repeat
     &:hover
-      background-position: -300px 0
+      background-position: -154px 0
+
+    +breakpoint($tablet)
+      margin-bottom: 2px
+      background: image-url("logos/splash-logos.png") 0 0 no-repeat
+      &:hover
+        background-position: -300px 0
 
   .star-logo
-    background: image-url("logos/splash-logos.png") -600px 0 no-repeat
-
+    background: image-url("logos/splash-logos-sm.png") -308px 0 no-repeat
     &:hover
-      background-position: -900px 0
+      background-position: -462px 0
+
+    +breakpoint($tablet)
+      background: image-url("logos/splash-logos.png") -600px 0 no-repeat
+      &:hover
+        background-position: -900px 0
 
   .adults,
   .highschool
     position: absolute
-    width: 200px
+    width: 100%
     // FIXME ccm: need a different font measurement.
-    font-size: 120%
+    font-size: 90%
+    text-align: center
 
   .adults
-    top: 75px
-    left: 294px + 40px
+    top: -41px
 
   .highschool
-    top: 50px
-    right: 294px + 40px
-    text-align: right
+    top: 80px
+
+  +breakpoint($tablet)
+    .adults,
+    .highschool
+      position: absolute
+      width: 200px
+      // FIXME ccm: need a different font measurement.
+      font-size: 120%
+
+    .adults
+      top: 75px
+      left: 294px + 40px
+      text-align: left
+
+    .highschool
+      top: 50px
+      right: 294px + 40px
+      text-align: right
