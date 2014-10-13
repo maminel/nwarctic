@@ -2,8 +2,24 @@
   NW Arctic
 =# currently_at ''
 
-%section.panel#panel-1
-  .container
-    .panel-1
-      %h1= link_to 'ATC', atc_path, :title   => 'Alaska Technical Center'
-      %h1= link_to 'Star', star_path, :title => 'Star of the Northwest Magnet School'
+.splash
+  %a{href: '/atc', title: 'Alaska Technical Center', class: 'atc-logo'}
+    %span.ir Alaska Technical Center
+    %span.adults
+      Programs for
+      %br
+      Adult Learners
+  %a{href: '/star', title: 'Star of the Northwest Magnet School', class: 'star-logo'}
+    %span.ir Star of the Northwest Magnet School
+    %span.highschool
+      Programs for
+      %br
+      High School Learners
+  %footer{:role => "contentinfo"}
+    %ul
+      %li
+        = link_to 'ATC', atc_path, :title => 'Alaska Technical Center'
+      %li &#124;
+      %li
+        = link_to 'Star', star_path, :title => 'Star of the Northwest Magnet School'
+    %p Northwest Arctic Borough School District

@@ -22,6 +22,9 @@ body
   &:after
     +rwd-marker
 
+#splash
+  background-color: $bg-body-splash
+
 .wrapper
   // margin: 0 auto
   // overflow: hidden
@@ -64,18 +67,21 @@ header
 /* Footer
   -----------------------
 
-footer
-  height: 100px
-  margin-top: 30px
-  ul
-    margin-bottom: 5px
-    li
-      display: inline-block
-      padding: 0 10px
-    li:first-child
-      padding-left: 0
+.splash
+  footer
+    margin-top: 30px
+    text-align: center
+    ul
+      margin: 0
+      color: $font-gray
+      li
+        display: inline-block
+        padding: 0 5px
+      li:first-child
+        padding-left: 0
+      a
+        +link-colors($font-gray, $link-hover, $font-gray, $font-gray, $font-gray)
 
-  p
-    margin-top: 0
-    font-size: 75%
-    color: $font-gray
+    p
+      margin-top: 5px
+      color: $font-black
