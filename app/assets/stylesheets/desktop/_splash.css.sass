@@ -2,16 +2,16 @@
   position: absolute
   top: 50%
   left: 50%
-  width: 407px
-  height: 407px
-  margin-top: -233px
-  margin-left: -203px
+  width: 294px
+  height: 294px
+  margin-top: -220px
+  margin-left: -147px
 
   .atc-logo, .star-logo
     position: relative
     display: block
-    width: 407px
-    height: 202px
+    width: 294px
+    height: 146px
 
     .adults, .highschool
       display: none
@@ -22,30 +22,30 @@
         +link-colors($font-gray, $link-hover, $font-gray, $font-gray, $font-gray)
 
   .atc-logo
-    margin-bottom: 3px
-    background: image-url("logos/splash-atc-logo.png") 0 0 no-repeat
+    margin-bottom: 2px
+    background: image-url("logos/splash-logos.png") 0 0 no-repeat
 
     &:hover
-      background-image: image-url("logos/splash-atc-logo-roll.png")
+      background-position: -300px 0
 
   .star-logo
-    background: image-url("logos/splash-star-logo.png") 0 0 no-repeat
+    background: image-url("logos/splash-logos.png") -600px 0 no-repeat
 
     &:hover
-      background-image: image-url("logos/splash-star-logo-roll.png")
+      background-position: -900px 0
 
   .adults,
   .highschool
     position: absolute
-    top: 100px
     width: 200px
-    // FIXME ccm: Will need a different font measurement.
+    // FIXME ccm: need a different font measurement.
     font-size: 120%
-    // border: 1px solid red
 
   .adults
-    left: 417px
+    top: 75px
+    left: 294px + 40px
 
   .highschool
-    right: 417px
+    top: 50px
+    right: 294px + 40px
     text-align: right
