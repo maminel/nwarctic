@@ -2,19 +2,33 @@
   -----------------------
 
 nav
-  float: left
-  margin: 10px 0 0 20px
-  div
-    float: left
-    margin-right: 20px
-    font-family: $font-family-nav
-    +link-colors($color-nav, $color-nav, $color-nav, $color-nav, $color-nav)
-  div:last-child
-    margin-right: 0
+  float: right
+  margin-top: 10px
+  ul
+    margin: 0
 
-ul#subnav
-  margin: 0
-  list-style-position: inside
   li
-    // font-family: $base-font-family
-    color: $base-font-color
+    float: left
+    display: inline
+    a
+      display: block
+      margin-right: 20px
+      padding-left: 5px
+    ul
+      position: absolute
+      width: 250px
+      padding-top: 15px
+      li
+        width: 250px
+        a
+          display: block
+          padding: 5px
+      li:hover a
+        background: #f7f7f7
+
+  li
+    ul.fallback
+      display: none
+  li:hover
+    ul.fallback
+      display: block

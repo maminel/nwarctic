@@ -6,7 +6,7 @@
       = browsehappy
       %header{:role => "banner"}
         .container
-          = render 'layouts/star/logo'
+          .logo= link_to image_tag('logos/logo.png', :alt => 'XXX', :width => '50', :height => '50'), star_path, :title => 'Star of the Northwest Magnet School'
           = render 'layouts/star/navigation'
       #main{:role => "main"}
         = yield

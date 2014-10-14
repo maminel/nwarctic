@@ -1,31 +1,32 @@
 %nav{:role => "navigation"}
-  %div
-    = link_to 'Home', star_path, :title => ''
-  %div
-    = link_to 'About Us', star_about_us_path, :title => ''
-    %ul#subnav
-      %li= link_to 'Who We Are', star_who_we_are_path, :title => ''
-      %li= link_to 'Partnerships', star_partnerships_path, :title => ''
-      %li= link_to 'Support Us', star_support_us_path, :title => ''
-  %div
-    = link_to 'Inquire', star_inquire_path, :title => ''
-    %ul#subnav
-      %li= link_to 'Is STAR for Me?', star_for_me_path, :title => ''
-      %li= link_to 'Complete Inquiry Form', star_inquiry_form_path, :title => ''
-  %div
-    = link_to 'Career Pathways', star_careers_path, :title => ''
-    %ul#subnav
-      %li= link_to 'Programs', star_programs_path, :title => ''
-      %li= link_to 'Workforce Development', star_development_path, :title => ''
-  %div
-    = link_to 'Academics', star_academics_path, :title => ''
-    %ul#subnav
-      %li= link_to 'High School...', star_schools_path, :title => ''
-      %li= link_to 'What We Offer', star_offer_path, :title => ''
-  %div
-    = link_to 'Student Life', star_student_life_path, :title => ''
-    %ul#subnav
-      %li= link_to 'Safe Positive Structure', star_safe_path, :title => ''
-      %li= link_to 'Dormitory', star_dormitory_path, :title => ''
-      %li= link_to 'Community and Culture', star_community_path, :title => ''
-      %li= link_to 'Activities', star_activities_path, :title => ''
+  %ul
+    -# %li
+    -#   = link_to 'Home', star_path, :title => ''
+    %li
+      = link_to 'ABOUT US', star_about_us_path, :title => ''
+      %ul.fallback
+        %li= link_to 'Who We Are', star_who_we_are_path, :title => ''
+        %li= link_to 'Partnerships', star_partnerships_path, :title => ''
+        %li= link_to 'Support Us', star_support_us_path, :title => ''
+    %li
+      = link_to 'INQUIRE', star_inquire_path, :title => ''
+      %ul.fallback
+        %li= link_to 'Is STAR for Me?', star_for_me_path, :title => ''
+        %li= link_to 'Complete Inquiry Form', star_inquiry_form_path, :title => ''
+    %li
+      = link_to 'CAREER PATHWAYS', star_careers_path, :title => ''
+      %ul.fallback
+        %li= link_to 'Programs', star_programs_path, :title => ''
+        %li= link_to 'Workforce Development', star_development_path, :title => ''
+    %li
+      = link_to 'ACADEMICS', star_academics_path, :title => ''
+      %ul.fallback
+        %li= link_to 'High School...', star_schools_path, :title => ''
+        %li= link_to 'What We Offer', star_offer_path, :title => ''
+    %li
+      = link_to 'STUDENT LIFE', star_student_life_path, :title => ''
+      %ul.fallback
+        %li= link_to 'Safe Positive Structure', star_safe_path, :title => ''
+        %li= link_to 'Dormitory', star_dormitory_path, :title => ''
+        %li= link_to 'Community and Culture', star_community_path, :title => ''
+        %li= link_to 'Activities', star_activities_path, :title => ''
