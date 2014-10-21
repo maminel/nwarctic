@@ -13,7 +13,7 @@ class StarController < ApplicationController
   def partnerships
   end
 
-  def support_us
+  def watch_video
   end
 
   def inquire
@@ -26,12 +26,6 @@ class StarController < ApplicationController
   end
 
   def careers
-  end
-
-  def programs
-  end
-
-  def development
   end
 
   def academics

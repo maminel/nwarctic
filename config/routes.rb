@@ -23,29 +23,27 @@ Rails.application.routes.draw do
   get 'community',     to: 'atc#community',           as: :atc_community
   get 'activities',    to: 'atc#activities',          as: :atc_activities
 
-  get 'star',          to: 'star#index',              as: :star
-  get 'about_us',      to: 'star#about_us',           as: :star_about_us
-  get 'who_we_are',    to: 'star#who_we_are',         as: :star_who_we_are
-  get 'partnerships',  to: 'star#partnerships',       as: :star_partnerships
-  get 'support_us',    to: 'star#support_us',         as: :star_support_us
-  get 'inquire',       to: 'star#inquire',            as: :star_inquire
-  get 'for_me',        to: 'star#for_me',             as: :star_for_me
-  get 'inquiry_form',  to: 'star#inquiry_form',       as: :star_inquiry_form
-  get 'careers',       to: 'star#career_pathways',    as: :star_careers
-  get 'programs',      to: 'star#programs',           as: :star_programs
-  get 'development',   to: 'star#development',        as: :star_development
-  get 'academics',     to: 'star#academics',          as: :star_academics
-  get 'schools',       to: 'star#schools',            as: :star_schools
-  get 'offer',         to: 'star#offer',              as: :star_offer
-  get 'student_life',  to: 'star#student_life',       as: :star_student_life
-  get 'safe',          to: 'star#safe',               as: :star_safe
-  get 'dormitory',     to: 'star#dormitory',          as: :star_dormitory
-  get 'community',     to: 'star#community',          as: :star_community
-  get 'activities',    to: 'star#activities',         as: :star_activities
+  get 'star',              to: 'star#index',              as: :star
+  get 'star/about_us',     to: 'star#about_us',           as: :star_about_us
+  get 'star/who_we_are',   to: 'star#who_we_are',         as: :star_who_we_are
+  get 'star/partnerships', to: 'star#partnerships',       as: :star_partnerships
+  get 'star/watch_video',  to: 'star#watch_video',        as: :star_watch_video
+  get 'star/inquire',      to: 'star#inquire',            as: :star_inquire
+  get 'star/for_me',       to: 'star#for_me',             as: :star_for_me
+  get 'star/inquiry_form', to: 'star#inquiry_form',       as: :star_inquiry_form
+  get 'star/careers',      to: 'star#careers',            as: :star_careers
+  get 'star/academics',    to: 'star#academics',          as: :star_academics
+  get 'star/schools',      to: 'star#schools',            as: :star_schools
+  get 'star/offer',        to: 'star#offer',              as: :star_offer
+  get 'star/student_life', to: 'star#student_life',       as: :star_student_life
+  get 'star/safe',         to: 'star#safe',               as: :star_safe
+  get 'star/dormitory',    to: 'star#dormitory',          as: :star_dormitory
+  get 'star/community',    to: 'star#community',          as: :star_community
+  get 'star/activities',   to: 'star#activities',         as: :star_activities
 
-  get 'about',         to: 'pages#about',             as: :about
-  get 'contact',       to: 'pages#contact',           as: :contact
-  get 'design',        to: 'pages#design'
+  get 'about',             to: 'pages#about',             as: :about
+  get 'contact',           to: 'pages#contact',           as: :contact
+  get 'design',            to: 'pages#design'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
