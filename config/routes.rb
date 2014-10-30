@@ -34,12 +34,10 @@ Rails.application.routes.draw do
   get 'star/careers',      to: 'star#careers',            as: :star_careers
   get 'star/academics',    to: 'star#academics',          as: :star_academics
   get 'star/schools',      to: 'star#schools',            as: :star_schools
-  get 'star/offer',        to: 'star#offer',              as: :star_offer
+  get 'star/programs',     to: 'star#programs',           as: :star_programs
   get 'star/student_life', to: 'star#student_life',       as: :star_student_life
   get 'star/safe',         to: 'star#safe',               as: :star_safe
-  get 'star/dormitory',    to: 'star#dormitory',          as: :star_dormitory
-  get 'star/community',    to: 'star#community',          as: :star_community
-  get 'star/activities',   to: 'star#activities',         as: :star_activities
+  get 'star/residential',  to: 'star#residential',         as: :star_residential
 
   get 'about',             to: 'pages#about',             as: :about
   get 'contact',           to: 'pages#contact',           as: :contact

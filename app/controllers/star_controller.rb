@@ -34,19 +34,13 @@ class StarController < ApplicationController
   def schools
   end
 
-  def offer
+  def programs
   end
 
   def student_life
   end
 
   def safe
-  end
-
-  def dormitory
-  end
-
-  def community
   end
 
   def activities
