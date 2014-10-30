@@ -10,10 +10,28 @@ class AtcController < ApplicationController
   def who_we_are
   end
 
-  def partnerships
+  def adult_ed
   end
 
-  def support_us
+  def construction
+  end
+
+  def culinary
+  end
+
+  def education
+  end
+
+  def healthcare
+  end
+
+  def office
+  end
+
+  def technology
+  end
+
+  def partnerships
   end
 
   def admissions
@@ -28,9 +46,6 @@ class AtcController < ApplicationController
   def costs
   end
 
-  def academics
-  end
-
   def programs
   end
 
@@ -40,24 +55,21 @@ class AtcController < ApplicationController
   def careers
   end
 
-  def development
+  def pathways
   end
 
-  def jobs
+  def skills
+  end
+
+  def guarantee
+  end
+
+  def environment
   end
 
   def student_life
   end
 
-  def safe
-  end
-
-  def dormitory
-  end
-
-  def community
-  end
-
-  def activities
+  def life
   end
 end

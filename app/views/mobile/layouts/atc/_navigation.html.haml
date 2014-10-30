@@ -1,32 +1,37 @@
 %nav{:role => "navigation"}
-  %div
-    = link_to 'Home', atc_path, :title => ''
-  %div
-    = link_to 'About Us', atc_about_us_path, :title => ''
-    %ul.subnav
-      %li= link_to 'Who We Are', atc_who_we_are_path, :title => ''
-      %li= link_to 'Partnerships', atc_partnerships_path, :title => ''
-      %li= link_to 'Support Us', atc_support_us_path, :title => ''
-  %div
-    = link_to 'Admissions', atc_admissions_path, :title => ''
-    %ul.subnav
-      %li= link_to 'Apply', atc_apply_path, :title => ''
-      %li= link_to 'Financial Aid', atc_financial_aid_path, :title => ''
-      %li= link_to 'Training Costs', atc_costs_path, :title => ''
-  %div
-    = link_to 'Academics', atc_academics_path, :title => ''
-    %ul.subnav
-      %li= link_to 'Programs', atc_programs_path, :title => ''
-      %li= link_to 'What We Offer', atc_offer_path, :title => ''
-  %div
-    = link_to 'Career Pathways', atc_careers_path, :title => ''
-    %ul.subnav
-      %li= link_to 'Workforce Development', atc_development_path, :title => ''
-      %li= link_to 'Job Opportunities', atc_jobs_path, :title => ''
-  %div
-    = link_to 'Student Life', atc_student_life_path, :title => ''
-    %ul.subnav
-      %li= link_to 'Safe Positive Structure', atc_safe_path, :title => ''
-      %li= link_to 'Dormitory', atc_dormitory_path, :title => ''
-      %li= link_to 'Community and Culture', atc_community_path, :title => ''
-      %li= link_to 'Activities', atc_activities_path, :title => ''
+  %ul
+    -# %li
+    -#   = link_to 'HOME', atc_path, :title => ''
+    %li
+      = link_to 'ABOUT US', atc_about_us_path, :title => ''
+      %ul.fallback
+        %li= link_to 'Who We Are', atc_who_we_are_path, :title => ''
+        %li= link_to 'Partnerships', atc_partnerships_path, :title => ''
+    %li
+      = link_to 'ADMISSIONS', atc_admissions_path, :title => ''
+      %ul.fallback
+        %li= link_to 'Apply', atc_apply_path, :title => ''
+        %li= link_to 'Financial Aid', atc_financial_aid_path, :title => ''
+        %li= link_to 'Training Costs', atc_costs_path, :title => ''
+    %li
+      = link_to 'PROGRAMS', atc_programs_path, :title => ''
+      %ul.fallback
+        %li= link_to 'What We Offer', atc_offer_path, :title => ''
+        %li= link_to 'Adult Basic Education', atc_adult_ed_path, :title => ''
+        %li= link_to 'Construction Trades', atc_construction_path, :title => ''
+        %li= link_to 'Culinary Arts', atc_culinary_path, :title => ''
+        %li= link_to 'Education Careers', atc_education_path, :title => ''
+        %li= link_to 'Healthcare', atc_healthcare_path, :title => ''
+        %li= link_to 'Office Occupations', atc_office_path, :title => ''
+        %li= link_to 'Process Technology', atc_technology_path, :title => ''
+    %li
+      = link_to 'CAREERS', atc_careers_path, :title => ''
+      %ul.fallback
+        %li= link_to 'Our Pathways', atc_pathways_path, :title => ''
+        %li= link_to 'Soft Skills', atc_skills_path, :title => ''
+        %li= link_to 'Our Guarantee', atc_guarantee_path, :title => ''
+    %li
+      = link_to 'STUDENT LIFE', atc_student_life_path, :title => ''
+      %ul.fallback
+        %li= link_to 'A Professional Environment', atc_environment_path, :title => ''
+        %li= link_to 'Residential and Community Life', atc_life_path, :title => ''
