@@ -2,105 +2,147 @@
   -----------------------
 
 #hero
+  background-color: #000
   h1
+    line-height: 1
+    margin: 0
+    font-size: 55px
     color: $font-white
+  .light
+    font-weight: 300
+  .thin
+    font-weight: 100
   ul, ol
     list-style-position: inside
+  a
+    display: inline-block
+    padding-top: 25px
+    font-size: 35px
+    font-weight: 300
+
+#atc #hero a
+  color: $color-atc
+  // +link-colors($color-atc, $font-white, $color-atc, $color-atc, $color-atc)
+
+#star #hero a
+  color: $color-star
+  // +link-colors($color-atc, $font-white, $color-atc, $color-atc, $color-atc)
 
 .iosslider
   position: relative
   top: 0
   left: 0
-  width: 1140px
+  width: 1400px
   height: 602px
+  margin: 0 auto
   overflow: hidden
-
+  .container
+    position: relative
   .slider
     width: 100%
     height: 100%
-
   .slide
     float: left
-    width: 1140px
+    width: 1400px
     height: 602px
+    .container
+      height: 602px
 
-  .text1
-    position: absolute
-    top: 100px
-    // left: 100px
-    left: 30px
-    // opacity: 0
+.hero, .hero2, .hero3, .hero4
 
-  .text2
-    position: absolute
-    top: 150px
-    // left: 100px
-    left: 30px
-    // opacity: 0
 
 #atc
   .hero1
-    background: image-url("heroes/hero-1.jpg") 50% 0 no-repeat
+    background: image-url("heroes/atc-hero-1.jpg") 50% 0 no-repeat
 
   .hero2
-    background: image-url("heroes/hero-2.jpg") 50% 0 no-repeat
+    background: image-url("heroes/atc-hero-2.jpg") 50% 0 no-repeat
 
   .hero3
-    background: image-url("heroes/hero-3.jpg") 50% 0 no-repeat
+    background: image-url("heroes/atc-hero-3.jpg") 50% 0 no-repeat
 
   .hero4
-    background: image-url("heroes/hero-4.jpg") 50% 0 no-repeat
+    background: image-url("heroes/atc-hero-4.jpg") 50% 0 no-repeat
 
 #star
   .hero1
-    background: image-url("heroes/hero-1.jpg") 50% 0 no-repeat
+    background: image-url("heroes/star-hero-1.jpg") 50% 0 no-repeat
 
   .hero2
-    background: image-url("heroes/hero-2.jpg") 50% 0 no-repeat
+    background: image-url("heroes/star-hero-2.jpg") 50% 0 no-repeat
 
   .hero3
-    background: image-url("heroes/hero-3.jpg") 50% 0 no-repeat
+    background: image-url("heroes/star-hero-3.jpg") 50% 0 no-repeat
 
   .hero4
-    background: image-url("heroes/hero-4.jpg") 50% 0 no-repeat
+    background: image-url("heroes/star-hero-4.jpg") 50% 0 no-repeat
+
+  // FIXME ccm: Add no-js default
+
+.text, .swish1, .swish2, .fade3
+  position: absolute
+  bottom: 50px
+  left: 125px
+  right: 0
+.fade1, .fade2, .fade3, .swish1, .swish2
+  opacity: 0
+.swish1, .swish2
+  left: 525px
+.swish1
+  bottom: 107px
+
+.prev-slide, .next-slide
+  position: absolute
+  top: -315px
+  width: 27px
+  height: 29px
+  z-index: 2
 
 .prev-slide
-  position: absolute
-  top: 130px
-  left: 0
-  width: 20px
-  height: 40px
-  background-color: white
-  z-index: 2
+  left: 50px
+  background: image-url("arw-l.png") 0 0 no-repeat
+  &:hover
+    background-image: image-url("arw-l-ro.png")
 
 .next-slide
-  position: absolute
-  top: 130px
-  right: 0
-  width: 20px
-  height: 40px
-  background-color: white
-  z-index: 2
+  right: 50px
+  background: image-url("arw-r.png") 0 0 no-repeat
+  &:hover
+    background-image: image-url("arw-r-ro.png")
 
 .slider-buttons
   position: absolute
-  bottom: 10px
-  left: 10px
-  width: 200px
-  height: 10px
+  bottom: 28px
+  right: 85px
+  width: 101px
+  height: 17px
 
   .button
     float: left
-    width: 9px
-    height: 9px
-    margin: 0 10px 0 0
-    background: #fff
-    opacity: 0.25
-    border: 1px solid #000
+    width: 17px
+    height: 17px
+    margin-right: 11px
+    +border-radius(17px)
+    &:last-child
+      margin-right: 0
+
+#atc .slider-buttons
+  .button
+    background: $color-white
+    &:hover
+      background: $color-atc
 
   .selected
-    background: #fff
-    opacity: 1
+    background: $color-atc
+
+#star .slider-buttons
+  .button
+    background: $color-white
+    &:hover
+      background: $color-star
+
+  .selected
+    background: $color-star
 
 
 /* Gallery

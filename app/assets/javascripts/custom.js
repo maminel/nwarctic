@@ -40,8 +40,8 @@ $(document).ready(function() {
         navPrevSelector      : $('.prev-slide'),
         navNextSelector      : $('.next-slide'),
         onSlideChange        : slideContentChange,
-        // onSlideComplete      : slideContentComplete,
-        // onSliderLoaded       : slideContentLoaded
+        onSlideComplete      : slideContentComplete,
+        onSliderLoaded       : slideContentLoaded
     });
 
     function slideContentChange(args) {
@@ -55,16 +55,27 @@ $(document).ready(function() {
 
         if(!args.slideChanged) return false;
 
-        /* animation */
-        $(args.sliderObject).find('.text1, .text2').attr('style', '');
+        $(args.sliderObject).find('.fade1, .fade2, .fade3, .swish1, .swish2').attr('style', '');
 
-        $(args.currentSlideObject).find('.text1').animate({
-            left: '30px',
+        $(args.currentSlideObject).find('.fade1').delay(400).animate({
             opacity: '1'
         }, 1000, 'easeOutQuint');
 
-        $(args.currentSlideObject).find('.text2').delay(200).animate({
-            left: '30px',
+        $(args.currentSlideObject).find('.fade2').delay(1200).animate({
+            opacity: '1'
+        }, 1000, 'easeOutQuint');
+
+        $(args.currentSlideObject).find('.fade3').delay(1200).animate({
+            opacity: '1'
+        }, 1000, 'easeOutQuint');
+
+        $(args.currentSlideObject).find('.swish1').animate({
+            left: '125px',
+            opacity: '1'
+        }, 1000, 'easeOutQuint');
+
+        $(args.currentSlideObject).find('.swish2').delay(1000).animate({
+            left: '125px',
             opacity: '1'
         }, 1000, 'easeOutQuint');
 
@@ -72,18 +83,29 @@ $(document).ready(function() {
 
     function slideContentLoaded(args) {
 
-        /* animation */
-        $(args.sliderObject).find('.text1, .text2').attr('style', '');
+        $(args.sliderObject).find('.fade1, .fade2, .fade3, .swish1, .swish2').attr('style', '');
 
-        $(args.currentSlideObject).find('.text1').animate({
-            left: '30px',
+        $(args.currentSlideObject).find('.fade1').delay( 400 ).animate({
             opacity: '1'
         }, 1000, 'easeOutQuint');
 
-        $(args.currentSlideObject).find('.text2').delay(200).animate({
-            left: '30px',
+        $(args.currentSlideObject).find('.fade2').delay( 1200 ).animate({
             opacity: '1'
         }, 1000, 'easeOutQuint');
+
+        $(args.currentSlideObject).find('.fade3').delay(1200).animate({
+            opacity: '1'
+        }, 1500, 'easeOutQuint');
+
+        $(args.currentSlideObject).find('.swish1').animate({
+            left: '125px',
+            opacity: '1'
+        }, 1000, 'easeOutQuint');
+
+        $(args.currentSlideObject).find('.swish2').delay(1000).animate({
+            left: '125px',
+            opacity: '1'
+        }, 1500, 'easeOutQuint');
 
     }
 

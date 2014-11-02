@@ -12,7 +12,7 @@ html
   // line-height: $base-line-height
   font-family: $base-font-family
   // font-size: $base-font-size
-  color: $base-font-color
+  color: $color-base-font
   /* This may cause problems in Firefox when combined with JS plugins (like modals or drag-and-drop UIs) that rely on viewport dimension calculations */
   overflow-y: scroll
   -webkit-font-smoothing: antialiased
@@ -54,15 +54,13 @@ video
 // navigation in _navigation.sass
 
 header
-  position: relative
-  height: 150px
-  margin-bottom: 10px
+  position: absolute
+  width: 100%
   z-index: 1000
 
 .logo
   float: left
-  margin: 10px 0 0 0
-  +link-colors($color-logo, $color-logo, $color-logo, $color-logo, $color-logo)
+  margin: 30px 0 0 80px
 
 
 /* Footer
