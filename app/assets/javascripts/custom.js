@@ -14,75 +14,77 @@ $('nav li').hover(
 
 
 // ===========================
-// Carousel
+//  iosslider
 // ===========================
 
-$(function() {
-    $('#carousel_atc').carouFredSel({
-        width: "100%",
-        height: "100%",
-        items: 1,
-        // items: {
-        //     visible: 1,
-        //     start: 0
-        // },
-        scroll: {
-            duration: 1000,
-            pauseOnHover: true,
-            onBefore: function( data ) {
-                data.items.visible.children().css( 'opacity', 0 ).delay( 200 ).fadeTo( 400, 1 );
-                data.items.old.children().fadeTo( 400, 0 );
-            }
-        },
-        auto                : true,
-        prev: {
-            button          : "#prev",
-            key             : "left"
-        },
-        next: {
-            button          : "#next",
-            key             : "right"
-        },
-        pagination: {
-            container       : "#pager"
-        },
-        swipe: {
-          onMouse           : true,
-          onTouch           : true
-        }
+$(document).ready(function() {
+
+    $('.iosslider').iosSlider({
+        // scrollbar            : true,
+        // scrollbarHide        : false,
+        // scrollbarLocation    : 'bottom',
+        // scrollbarHeight      : '6px',
+        // scrollbarBackground  : 'url(_img/some-img.png) repeat 0 0',
+        // scrollbarBorder      : '1px solid #000',
+        // scrollbarMargin      : '0 30px 16px 30px',
+        // scrollbarOpacity     : '0.75',
+        // scrollbarContainer   : '.sliderContainer .scrollbarContainer',
+        snapToChildren       : true,
+        desktopClickDrag     : true,
+        keyboardControls     : true,
+        // responsiveSlideWidth : true,
+        infiniteSlider       : true,
+        // snapSlideCenter      : true,
+        // autoSlide            : true,
+        navSlideSelector     : $('.slider-buttons .button'),
+        navPrevSelector      : $('.prev-slide'),
+        navNextSelector      : $('.next-slide'),
+        onSlideChange        : slideContentChange,
+        // onSlideComplete      : slideContentComplete,
+        // onSliderLoaded       : slideContentLoaded
     });
 
-    $('#carousel_star').carouFredSel({
-        width: "100%",
-        height: "100%",
-        items: 1,
-        // items: {
-        //     visible: 1,
-        //     start: 0
-        // },
-        scroll: {
-            duration: 1000,
-            pauseOnHover: true,
-            onBefore: function( data ) {
-                data.items.visible.children().css( 'opacity', 0 ).delay( 200 ).fadeTo( 400, 1 );
-                data.items.old.children().fadeTo( 400, 0 );
-            }
-        },
-        auto                : true,
-        prev: {
-            button          : "#prev",
-            key             : "left"
-        },
-        next: {
-            button          : "#next",
-            key             : "right"
-        },
-        pagination: {
-            container       : "#pager"
-        },
-        swipe: {
-          onMouse           : true,
-          onTouch           : true
-        }
-    });
+    function slideContentChange(args) {
+
+        $('.slider-buttons .button').removeClass('selected');
+        $('.slider-buttons .button:eq(' + (args.currentSlideNumber - 1) + ')').addClass('selected');
+
+    }
+
+    function slideContentComplete(args) {
+
+        if(!args.slideChanged) return false;
+
+        /* animation */
+        $(args.sliderObject).find('.text1, .text2').attr('style', '');
+
+        $(args.currentSlideObject).find('.text1').animate({
+            left: '30px',
+            opacity: '1'
+        }, 1000, 'easeOutQuint');
+
+        $(args.currentSlideObject).find('.text2').delay(200).animate({
+            left: '30px',
+            opacity: '1'
+        }, 1000, 'easeOutQuint');
+
+    }
+
+    function slideContentLoaded(args) {
+
+        /* animation */
+        $(args.sliderObject).find('.text1, .text2').attr('style', '');
+
+        $(args.currentSlideObject).find('.text1').animate({
+            left: '30px',
+            opacity: '1'
+        }, 1000, 'easeOutQuint');
+
+        $(args.currentSlideObject).find('.text2').delay(200).animate({
+            left: '30px',
+            opacity: '1'
+        }, 1000, 'easeOutQuint');
+
+    }
+
 });

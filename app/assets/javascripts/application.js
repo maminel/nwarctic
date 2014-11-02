@@ -13,5 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require jquery.carouFredSel-6.2.1-packed
+//= require jquery.easing-1.3
+//= require jquery.iosslider.min
 //= require custom

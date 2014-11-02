@@ -3,40 +3,35 @@
 =# currently_at ''
 
 %section#hero
-  #carousel_star
-    .slide.active
-      .slide-block
-        %h1 Star of the Northwest Magnet School is the best choice for Alaska's forward thinking high school students
-        %a{href: 'https://www.dropbox.com/s/rbi9vntqm7y0c8f/SAMPLE%207.png?dl=0', title: ''} Image
-    .slide.active
-      .slide-block
-        %h1
-          A 21st-century education and training facility...
-          %br
-          Right here at home.
-        %p
-          %a{href: 'https://www.dropbox.com/s/ihxnxmeebnz58se/DSC_0939.jpg?dl=0', title: ''} Image
-          or
-          %a{href: 'https://www.dropbox.com/s/j00imr9ooiq5kds/SAMPLE%205.png?dl=0', title: ''} Image
-    .slide
-      .slide-block
-        %h1 A safe, positive structure parents expect.
-        %a{:href => '#', :title => ''} Inquire Now
-        %p
-          %a{href: 'https://www.dropbox.com/s/avy6cu0p6e2xmpw/SAMPLE%208.png?dl=0', title: ''} Image
-          or
-          %a{href: 'https://www.dropbox.com/s/32lwl7c9qndtge7/SAMPLE%2010.png?dl=0', title: ''} Image
-    .slide
-      .slide-block
-        %h1 The classes, activities and events students love.
-        %a{:href => '#', :title => ''} Inquire Now
-        %br
-        %br
-        %a{href: 'https://www.dropbox.com/s/07lwfr759cfeidd/SAMPLE%2015.png?dl=0', title: ''} Image
-
-  = link_to 'Previous', '#', :title => 'Previous', :id => 'prev', :class => 'control'
-  = link_to 'Next', '#', :title => 'Next', :id => 'next', :class => 'control'
-  #pager
+  .iosslider
+    .slider
+      .slide.hero1
+        .text1
+          %h1 Star of the Northwest Magnet School is the best choice for Alaska's forward thinking high school students
+      .slide.hero2
+        .text1
+          %h1
+            A 21st-century education and training facility...
+        .text2
+          %h1
+            Right here at home.
+      .slide.hero3
+        .text1
+          %h1 A safe, positive structure parents expect.
+        .text2
+          %a{:href => '#', :title => ''} Inquire Now
+      .slide.hero4
+        .text1
+          %h1 The classes, activities and events students love.
+        .text2
+          %a{:href => '#', :title => ''} Inquire Now
+    .prev-slide
+    .next-slide
+    .slider-buttons
+      .button.selected
+      .button
+      .button
+      .button
 
 %section.panel#grid
   .container

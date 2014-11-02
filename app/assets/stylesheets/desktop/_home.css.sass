@@ -2,28 +2,105 @@
   -----------------------
 
 #hero
-  // position: relative
-  // width: 100%
-  // height: 250px
-  // overflow: hidden
+  h1
+    color: $font-white
   ul, ol
     list-style-position: inside
 
-.slide
+.iosslider
   position: relative
-  float: left
-  display: block
-  width: 1024px
-  height: 250px
-
-.slide-block
-  position: absolute
-  display: block
   top: 0
-  width: 100%
+  left: 0
+  width: 1140px
+  height: 602px
+  overflow: hidden
 
-#pager .selected
-  font-weight: bold
+  .slider
+    width: 100%
+    height: 100%
+
+  .slide
+    float: left
+    width: 1140px
+    height: 602px
+
+  .text1
+    position: absolute
+    top: 100px
+    // left: 100px
+    left: 30px
+    // opacity: 0
+
+  .text2
+    position: absolute
+    top: 150px
+    // left: 100px
+    left: 30px
+    // opacity: 0
+
+#atc
+  .hero1
+    background: image-url("heroes/hero-1.jpg") 50% 0 no-repeat
+
+  .hero2
+    background: image-url("heroes/hero-2.jpg") 50% 0 no-repeat
+
+  .hero3
+    background: image-url("heroes/hero-3.jpg") 50% 0 no-repeat
+
+  .hero4
+    background: image-url("heroes/hero-4.jpg") 50% 0 no-repeat
+
+#star
+  .hero1
+    background: image-url("heroes/hero-1.jpg") 50% 0 no-repeat
+
+  .hero2
+    background: image-url("heroes/hero-2.jpg") 50% 0 no-repeat
+
+  .hero3
+    background: image-url("heroes/hero-3.jpg") 50% 0 no-repeat
+
+  .hero4
+    background: image-url("heroes/hero-4.jpg") 50% 0 no-repeat
+
+.prev-slide
+  position: absolute
+  top: 130px
+  left: 0
+  width: 20px
+  height: 40px
+  background-color: white
+  z-index: 2
+
+.next-slide
+  position: absolute
+  top: 130px
+  right: 0
+  width: 20px
+  height: 40px
+  background-color: white
+  z-index: 2
+
+.slider-buttons
+  position: absolute
+  bottom: 10px
+  left: 10px
+  width: 200px
+  height: 10px
+
+  .button
+    float: left
+    width: 9px
+    height: 9px
+    margin: 0 10px 0 0
+    background: #fff
+    opacity: 0.25
+    border: 1px solid #000
+
+  .selected
+    background: #fff
+    opacity: 1
 
 
 /* Gallery

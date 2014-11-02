@@ -29,10 +29,6 @@ body
   // margin: 0 auto
   // overflow: hidden
 
-header
-  position: relative
-  z-index: 1000
-
 .container
   +container()
   padding-left: 10px
@@ -58,9 +54,10 @@ video
 // navigation in _navigation.sass
 
 header
+  position: relative
   height: 150px
   margin-bottom: 10px
-  background-color: $bg-header
+  z-index: 1000
 
 .logo
   float: left

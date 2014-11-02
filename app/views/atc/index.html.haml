@@ -3,18 +3,16 @@
 =# currently_at ''
 
 %section#hero
-  #carousel_atc
-    .slide.active
-      .slide-block
+  .iosslider
+    .slider
+      .slide.hero1
         %h1 Alaska Technical Center is the best choice for people who are serious about preparing for a career.
         %a{href: 'https://www.dropbox.com/s/y2arkhfqp2wglpx/SAMPLE%201.png?dl=0', title: ''} Image
-    .slide.active
-      .slide-block
+      .slide.hero2
         %h2 Career Training
         %p We're all about jobs, preparing you for high paying, high-demand careers.
         %a{href: 'https://www.dropbox.com/s/7ghnaa87qqp3srs/SAMPLE%2019.JPG?dl=0', title: ''} Image
-    .slide
-      .slide-block
+      .slide.hero3
         %h1 Alaska's Best Kept Secret. Why?
         %ol
           %li Amazing facilities
@@ -22,16 +20,18 @@
           %li All right here in Alaska
         %a{:href => '#', :title => ''} Learn More
         %a{href: 'https://www.dropbox.com/s/k9co4tuckn2nh08/STNW_ATC_HABEGER_Hi-RES-7782.jpg?dl=0', title: ''} Image
-    .slide
-      .slide-block
+      .slide.hero4
         %h1 Invest in yourself.
         %p We're here to help.
         %a{:href => '#', :title => ''} Apply Now
         %a{href: 'https://www.dropbox.com/s/76enivuhxvr2yod/STNW_ATC_HABEGER_Hi-RES-8074.jpg?dl=0', title: ''} Image
-
-  = link_to 'Previous', '#', :title => 'Previous', :id => 'prev', :class => 'control'
-  = link_to 'Next', '#', :title => 'Next', :id => 'next', :class => 'control'
-  #pager
+    .prev-slide
+    .next-slide
+    .slider-buttons
+      .button.selected
+      .button
+      .button
+      .button
 
 %section.panel#grid
   .container
