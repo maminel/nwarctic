@@ -1,8 +1,35 @@
 %footer{:role => "contentinfo"}
   .container
-    %ul
-      %li
-        = link_to 'About', about_path, :title => ''
-      %li
-        = link_to 'Contact', contact_path, :title => ''
-    %p.copyright &copy; XXX 2014
+    = image_tag 'logos/nwabsd-logo.png', alt: 'NWABSD Logo'
+
+    .address
+      .vcard
+        %p.fn.org
+          Star of the Northwest Magnet School
+        .adr
+          %p.street-address PO Box 51
+          %p
+            %span.locality> Kotzebue
+            ,
+            %span.region Alaska
+            %span.postal-code 99752
+
+    .phone-number
+      %p
+        Toll Free --
+        %a{:href => 'callto://1-866-442-1607', :title => 'Toll Free Number', :class => 'callto'} 800-478-3733
+        %a{:href => 'tel://1-866-442-1607', :title => 'Toll Free Number', :class => 'tel'} 800-478-3733
+      %p
+        Phone --
+        %a{:href => 'callto://907-442-1607', :title => 'Main Number', :class => 'callto'} 907-442-1500
+        %a{:href => 'tel://907-442-1607', :title => 'Main Number', :class => 'tel'} 907-442-1500
+      %p
+        Email --
+        = mail_to 'star@nwarctic.org'
+      %ul
+        %li
+          = link_to 'About', about_path, :title => ''
+        %li
+          = link_to 'Contact', contact_path, :title => ''
+
+      %p.copyright &copy; Northwest Arctic Borough School District 2014
