@@ -49,6 +49,17 @@
       height: 602px
 
 #atc
+  .hero1, .hero2, .hero3, .hero4
+    background-color: #000
+    &:after
+      content: ""
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      background: image-url("heroes/fade.png") 0 0 repeat-x
+
   .hero1
     background: image-url("heroes/atc-hero-1.jpg") 50% 0 no-repeat
 
@@ -61,10 +72,17 @@
   .hero4
     background: image-url("heroes/atc-hero-4.jpg") 50% 0 no-repeat
 
-  .hero1, .hero2, .hero3, .hero4
-    background-color: #000
-
 #star
+  .hero1, .hero2, .hero3, .hero4
+    &:after
+      content: ""
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      background: image-url("heroes/fade.png") 0 0 repeat-x
+
   .hero1
     background: image-url("heroes/star-hero-1.jpg") 50% 0 no-repeat
 
@@ -78,6 +96,10 @@
     background: image-url("heroes/star-hero-2.jpg") 50% 0 no-repeat
 
   // FIXME ccm: Add no-js default
+
+
+.text, .fade1, .fade2, .fade3, .swish1, .swish2
+  z-index: 998
 
 .text, .swish1, .swish2, .fade3
   position: absolute
