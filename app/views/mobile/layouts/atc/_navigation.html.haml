@@ -1,11 +1,12 @@
 %nav{:role => "navigation"}
   %ul
-    -# %li
-    -#   = link_to 'HOME', atc_path, :title => ''
+    %li
+      = link_to 'HOME', atc_path, :title => ''
     %li
       = link_to 'ABOUT US', atc_about_us_path, :title => ''
       %ul.fallback
         %li= link_to 'Who We Are', atc_who_we_are_path, :title => ''
+        %li= link_to 'Our Instructors', atc_instructors_path, :title => ''
         %li= link_to 'Partnerships', atc_partnerships_path, :title => ''
     %li
       = link_to 'ADMISSIONS', atc_admissions_path, :title => ''

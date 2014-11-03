@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'atc',                      to: 'atc#index',               as: :atc
   get 'atc/about_us',             to: 'atc#about_us',            as: :atc_about_us
   get 'atc/who_we_are',           to: 'atc#who_we_are',          as: :atc_who_we_are
+  get 'atc/our_instructors',      to: 'atc#instructors',        as: :atc_instructors
   get 'atc/partnerships',         to: 'atc#partnerships',        as: :atc_partnerships
   get 'atc/admissions',           to: 'atc#admissions',          as: :atc_admissions
   get 'atc/apply',                to: 'atc#apply',               as: :atc_apply

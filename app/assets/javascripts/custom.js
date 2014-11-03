@@ -67,14 +67,14 @@ $(document).ready(function() {
 
         $(args.currentSlideObject).find('.fade3').delay(1200).animate({
             opacity: '1'
-        }, 1000, 'easeOutQuint');
+        }, 1400, 'easeOutQuint');
 
         $(args.currentSlideObject).find('.swish1').animate({
             left: '125px',
             opacity: '1'
         }, 1000, 'easeOutQuint');
 
-        $(args.currentSlideObject).find('.swish2').delay(1000).animate({
+        $(args.currentSlideObject).find('.swish2').delay(1500).animate({
             left: '125px',
             opacity: '1'
         }, 1000, 'easeOutQuint');
@@ -85,27 +85,27 @@ $(document).ready(function() {
 
         $(args.sliderObject).find('.fade1, .fade2, .fade3, .swish1, .swish2').attr('style', '');
 
-        $(args.currentSlideObject).find('.fade1').delay( 400 ).animate({
+        $(args.currentSlideObject).find('.fade1').delay(400).animate({
             opacity: '1'
         }, 1000, 'easeOutQuint');
 
-        $(args.currentSlideObject).find('.fade2').delay( 1200 ).animate({
+        $(args.currentSlideObject).find('.fade2').delay(1200).animate({
             opacity: '1'
         }, 1000, 'easeOutQuint');
 
         $(args.currentSlideObject).find('.fade3').delay(1200).animate({
             opacity: '1'
-        }, 1500, 'easeOutQuint');
+        }, 1400, 'easeOutQuint');
 
         $(args.currentSlideObject).find('.swish1').animate({
             left: '125px',
             opacity: '1'
         }, 1000, 'easeOutQuint');
 
-        $(args.currentSlideObject).find('.swish2').delay(1000).animate({
+        $(args.currentSlideObject).find('.swish2').delay(1500).animate({
             left: '125px',
             opacity: '1'
-        }, 1500, 'easeOutQuint');
+        }, 1000, 'easeOutQuint');
 
     }
 

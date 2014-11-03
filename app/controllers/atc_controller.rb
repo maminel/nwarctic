@@ -10,6 +10,12 @@ class AtcController < ApplicationController
   def who_we_are
   end
 
+  def instructors
+  end
+
+  def partnerships
+  end
+
   def adult_ed
   end
 
@@ -29,9 +35,6 @@ class AtcController < ApplicationController
   end
 
   def technology
-  end
-
-  def partnerships
   end
 
   def admissions
