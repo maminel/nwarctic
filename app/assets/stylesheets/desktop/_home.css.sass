@@ -28,6 +28,8 @@
   color: $color-star
   // +link-colors($color-atc, $font-white, $color-atc, $color-atc, $color-atc)
 
+// FIXME ccm: Add no-js default
+
 .iosslider
   position: relative
   top: 0
@@ -48,75 +50,51 @@
     .container
       height: 600px
 
+.hero1, .hero2, .hero3, .hero4,
+.hero1b, .hero2b, .hero3b, .hero4b, .hero4c
+  &:after
+    content: ""
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background: image-url("heroes/fade.png") 0 0 repeat-x
+
 #atc
   .hero1, .hero2, .hero3, .hero4
     background-color: #000
-    &:after
-      content: ""
-      position: absolute
-      top: 0
-      right: 0
-      bottom: 0
-      left: 0
-      background: image-url("heroes/fade.png") 0 0 repeat-x
-
   .hero1
     background: image-url("heroes/atc-hero-1.jpg") 50% 0 no-repeat
-
   .hero2
     background: image-url("heroes/atc-hero-2.jpg") 50% 0 no-repeat
-
   .hero3
     background: image-url("heroes/atc-hero-3.jpg") 50% 0 no-repeat
-
   .hero4
     background: image-url("heroes/atc-hero-4.jpg") 50% 0 no-repeat
 
 #star
-  .hero1, .hero2, .hero3, .hero4,
-  .hero1b, .hero2b, .hero3b, .hero4b, .hero4c
-    &:after
-      content: ""
-      position: absolute
-      top: 0
-      right: 0
-      bottom: 0
-      left: 0
-      background: image-url("heroes/fade.png") 0 0 repeat-x
-
   .hero1
     background: image-url("heroes/star-hero-1.jpg") 50% -85px no-repeat
-
   .hero1b
     background: image-url("heroes/star-hero-1b.jpg") 50% -645px no-repeat
-
   .hero2
     background: image-url("heroes/star-hero-2.jpg") 50% 0 no-repeat
-
   .hero2b
     background: image-url("heroes/star-hero-2b.jpg") 50% 0 no-repeat
-
   .hero3
     background: image-url("heroes/star-hero-3.jpg") 50% 0 no-repeat
-
   .hero3b
     background: image-url("heroes/star-hero-3b.jpg") 50% 0 no-repeat
-
   .hero4
     background: image-url("heroes/star-hero-4.jpg") 50% -185px no-repeat
-
   .hero4b
     background: image-url("heroes/star-hero-4b.jpg") 50% -185px no-repeat
-
   .hero4c
     background: image-url("heroes/star-hero-4c.jpg") 50% 0 no-repeat
 
-  // FIXME ccm: Add no-js default
-
-
 .text, .fade1, .fade2, .fade3, .swish1, .swish2
   z-index: 998
-
 .text, .swish1, .swish2, .fade3
   position: absolute
   bottom: 50px
@@ -135,19 +113,16 @@
   width: 27px
   height: 29px
   z-index: 2
-
 .prev-slide
   left: 50px
   background: image-url("arw-l.png") 0 0 no-repeat
   &:hover
     background-image: image-url("arw-l-ro.png")
-
 .next-slide
   right: 50px
   background: image-url("arw-r.png") 0 0 no-repeat
   &:hover
     background-image: image-url("arw-r-ro.png")
-
 .slider-buttons
   position: absolute
   bottom: 28px
@@ -155,7 +130,6 @@
   // width: 101px
   width: 241px
   height: 17px
-
   .button
     float: left
     width: 17px
@@ -170,7 +144,6 @@
     background: $color-white
     &:hover
       background: $color-atc
-
   .selected
     background: $color-atc
 
@@ -179,7 +152,6 @@
     background: $color-white
     &:hover
       background: $color-star
-
   .selected
     background: $color-star
 
