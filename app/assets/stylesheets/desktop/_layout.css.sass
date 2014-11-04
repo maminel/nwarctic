@@ -81,7 +81,6 @@ header
         padding-left: 0
       a
         +link-colors($font-gray, $link-hover, $font-gray, $font-gray, $font-gray)
-
     p
       margin-top: 20px
       color: $font-black
@@ -89,3 +88,45 @@ header
   +breakpoint($tablet)
     footer
       margin-top: 60px
+
+#atc footer
+  background-color: $color-atc
+
+#star footer
+  background-color: $color-star
+
+#atc footer, #star footer
+  padding-bottom: 40px
+  color: $font-white
+  a
+    +link-colors($font-white, $font-white, $font-white, $font-white, $font-white)
+  p
+    margin: 0
+
+  .info-column
+    +span(12 of 16)
+    padding-top: 60px
+    font-size: 14px
+    ul
+      margin: 0
+      li
+        display: inline-block
+        padding: 0 5px
+      li:first-child
+        padding-left: 0
+  .phone-number, .address
+    margin-top: 45px
+  .phone-number
+    span
+      margin-right: 10px
+  .adr
+    font-weight: 300
+
+  .district-column
+    +span(4 of 16 last)
+    padding-top: 50px
+    font-size: 9px
+    font-weight: 300
+    text-align: center
+    img
+      margin-bottom: 25px
