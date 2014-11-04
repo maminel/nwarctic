@@ -73,7 +73,8 @@
     background: image-url("heroes/atc-hero-4.jpg") 50% 0 no-repeat
 
 #star
-  .hero1, .hero2, .hero3, .hero4
+  .hero1, .hero2, .hero3, .hero4,
+  .hero1b, .hero3b, .hero4b, .hero4c
     &:after
       content: ""
       position: absolute
@@ -84,7 +85,9 @@
       background: image-url("heroes/fade.png") 0 0 repeat-x
 
   .hero1
-    // background: image-url("heroes/star-hero-1.jpg") 50% -85px no-repeat
+    background: image-url("heroes/star-hero-1.jpg") 50% -85px no-repeat
+
+  .hero1b
     background: image-url("heroes/star-hero-1b.jpg") 50% -85px no-repeat
 
   .hero2
@@ -93,8 +96,17 @@
   .hero3
     background: image-url("heroes/star-hero-3.jpg") 50% 0 no-repeat
 
+  .hero3b
+    background: image-url("heroes/star-hero-3b.jpg") 50% 0 no-repeat
+
   .hero4
     background: image-url("heroes/star-hero-4.jpg") 50% -185px no-repeat
+
+  .hero4b
+    background: image-url("heroes/star-hero-4b.jpg") 50% -185px no-repeat
+
+  .hero4c
+    background: image-url("heroes/star-hero-4c.jpg") 50% 0 no-repeat
 
   // FIXME ccm: Add no-js default
 
@@ -137,7 +149,8 @@
   position: absolute
   bottom: 28px
   right: 85px
-  width: 101px
+  // width: 101px
+  width: 213px
   height: 17px
 
   .button
