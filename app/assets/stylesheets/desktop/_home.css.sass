@@ -2,7 +2,6 @@
   -----------------------
 
 #hero
-  // background-color: #000
   h1
     line-height: 1
     margin: 0
@@ -19,33 +18,48 @@
 
 #atc #hero a
   color: $color-atc
-  // +link-colors($color-atc, $font-white, $color-atc, $color-atc, $color-atc)
 
 #star #hero a
   color: $color-star
-  // +link-colors($color-atc, $font-white, $color-atc, $color-atc, $color-atc)
 
 // FIXME ccm: Add no-js default
 
-.iosslider
+.responsive-height
   position: relative
-  top: 0
-  left: 0
+  height: 0
+  padding: 0 0 41% 0
+  overflow: visible
+  .inner
+    position: absolute
+    width: 100%
+    height: 100%
+    overflow: hidden
+
+.iosslider
+  // position: relative
+  // top: 0
+  // left: 0
   width: 1400px
   height: 600px
   margin: 0 auto
-  overflow: hidden
+  // overflow: hidden
   .container
     position: relative
   .slider
     width: 100%
     height: 100%
   .slide
-    float: left
-    width: 1400px
-    height: 600px
+    position: relative
+    top: 0
+    left: 0
+    // float: left
+    // width: 1400px
+    // height: 600px
+    width: 100%
+    height: 100%
+    // margin: 0
     .container
-      height: 600px
+      height: 100%
 
 .hero1, .hero2, .hero3, .hero4,
 .hero1b, .hero2b, .hero3b, .hero4b, .hero4c
@@ -73,22 +87,12 @@
 #star
   .hero1
     background: image-url("heroes/star-hero-1.jpg") 50% 0 no-repeat
-  .hero1b
-    background: image-url("heroes/star-hero-1b.jpg") 50% -645px no-repeat
   .hero2
     background: image-url("heroes/star-hero-2.jpg") 50% 0 no-repeat
-  .hero2b
-    background: image-url("heroes/star-hero-2b.jpg") 50% 0 no-repeat
   .hero3
     background: image-url("heroes/star-hero-3.jpg") 50% 0 no-repeat
-  .hero3b
-    background: image-url("heroes/star-hero-3b.jpg") 50% 0 no-repeat
   .hero4
-    background: image-url("heroes/star-hero-4.jpg") 50% -185px no-repeat
-  .hero4b
-    background: image-url("heroes/star-hero-4b.jpg") 50% -185px no-repeat
-  .hero4c
-    background: image-url("heroes/star-hero-4c.jpg") 50% 0 no-repeat
+    background: image-url("heroes/star-hero-4.jpg") 50% 0 no-repeat
 
 .text, .fade1, .fade2, .fade3, .swish1, .swish2
   z-index: 998
@@ -124,8 +128,7 @@
   position: absolute
   bottom: 28px
   right: 85px
-  // width: 101px
-  width: 241px
+  width: 101px
   height: 17px
   .button
     float: left
