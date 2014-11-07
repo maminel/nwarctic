@@ -79,28 +79,26 @@ header
 /* Footer
   -----------------------
 
-.splash
-  footer
-    margin-top: 80px
-    font-size: 75%
-    text-align: center
-    ul
-      margin: 0
-      color: $font-gray
-      li
-        display: inline-block
-        padding: 0 5px
-      li:first-child
-        padding-left: 0
-      a
-        +link-colors($font-gray, $link-hover, $font-gray, $font-gray, $font-gray)
-    p
-      margin-top: 20px
-      color: $font-black
+#splash footer
+  margin-top: 80px
+  font-size: 75%
+  text-align: center
+  ul
+    margin: 0
+    color: $font-gray
+    li
+      display: inline-block
+      padding: 0 5px
+    li:first-child
+      padding-left: 0
+    a
+      +link-colors($font-gray, $link-hover, $font-gray, $font-gray, $font-gray)
+  p
+    margin-top: 20px
+    color: $font-black
 
   +breakpoint($tablet)
-    footer
-      margin-top: 60px
+    margin-top: 60px
 
 #atc footer
   background-color: $color-atc
@@ -117,8 +115,8 @@ header
     margin: 0
 
   .info-column
-    +span(12 of 16)
-    padding-top: 60px
+    +span(6 of 6)
+    padding-top: 30px
     font-size: 14px
     ul
       margin: 0
@@ -127,19 +125,49 @@ header
         padding: 0 5px
       li:first-child
         padding-left: 0
-  .phone-number, .address
-    margin-top: 45px
-  .phone-number
-    span
-      margin-right: 10px
-  .adr
-    font-weight: 300
+    .phone-number, .address
+      margin-top: 25px
+    .phone-number
+      span
+        margin-right: 10px
+    .adr
+      font-weight: 300
+
+    +breakpoint($tablet)
+      +span(5 of 9)
+      padding-top: 60px
+      .phone-number, .address
+        margin-top: 45px
+
+    +breakpoint($desktop)
+      +span(12 of 16)
 
   .district-column
-    +span(4 of 16 last)
-    padding-top: 50px
+    +span(6 of 6)
+    padding-top: 25px
     font-size: 9px
     font-weight: 300
-    text-align: center
-    img
+    a
+      display: block
+      width: 100px
+      height: 102px
       margin-bottom: 25px
+      background: image-url("logos/nwabsd-logo-100.png") 0 0 no-repeat
+
+    +breakpoint($tablet)
+      +span(4 of 9 last)
+      padding-top: 50px
+      text-align: center
+      a
+        width: 191px
+        height: 195px
+        margin-left: auto
+        margin-right: auto
+        background: image-url("logos/nwabsd-logo.png") 0 0 no-repeat
+
+    +breakpoint($desktop)
+      +span(4 of 16 last)
+      a
+        width: 191px
+        height: 195px
+        background: image-url("logos/nwabsd-logo.png") 0 0 no-repeat
