@@ -2,8 +2,6 @@
   -----------------------
 
 #hero
-  max-width: 1400px
-  margin: 0 auto
   h1
     line-height: 1
     margin: 0
@@ -37,34 +35,44 @@
 
 // FIXME ccm: Add no-js default
 
-.responsive-height
-  position: relative
-  height: 0
-  padding: 0 0 43% 0
-  overflow: visible
-  .inner
-    position: absolute
-    width: 100%
-    height: 100%
-    overflow: hidden
-
 .iosslider
-  width: 100%
-  height: 600px
+  // required
+  position: relative
+  top: 0
+  left: 0
   overflow: hidden
+  // end
+  width: 660px
+  height: 283px
+  margin: 0 auto
   .container
     position: relative
   .slider
+    // required
     width: 100%
     height: 100%
   .slide
-    position: relative
-    top: 0
-    left: 0
-    width: 100%
-    height: 100%
+    // required
+    float: left
+    // end
+    width: 660px
+    height: 283px
     .container
       height: 100%
+
+  +breakpoint($tablet)
+    width: 980px
+    height: 420px
+    .slide
+      width: 980px
+      height: 420px
+
+  +breakpoint($desktop)
+    width: 1400px
+    height: 600px
+    .slide
+      width: 1400px
+      height: 600px
 
 .hero1, .hero2, .hero3, .hero4
   &:after
