@@ -2,51 +2,54 @@
   -----------------------
 
 #nav
-  float: right
-  margin-top: 1px
-  padding: 18px 20px 11px
-  ul
-    margin: 0
-  li
-    float: left
-    display: inline
-    a
-      display: block
-      margin-right: 43px
-      padding-left: 5px
-      font-size: 12px
-      font-weight: 300
-      +link-colors($font-white, $font-white, $font-white, $font-white, $font-white)
+  display: none
+
++breakpoint($tablet)
+  #nav
+    display: none
+
++breakpoint($desktop)
+  #nav
+    display: block
+    float: right
+    margin-top: 1px
+    padding: 18px 20px 11px
     ul
-      position: absolute
-      padding-top: 15px
-      width: 250px
-      li
+      margin: 0
+    li
+      float: left
+      display: inline
+      a
+        display: block
+        margin-right: 43px
+        padding-left: 5px
+        font-size: 12px
+        font-weight: 300
+        +link-colors($font-white, $font-white, $font-white, $font-white, $font-white)
+      ul
+        position: absolute
+        padding-top: 15px
         width: 250px
-        a
-          display: block
-          padding: 5px
-          width: 100%
-      // li:hover a
-      //   background: #f7f7f7
-    ul.fallback
-      display: none
-  li:hover
-    ul.fallback
-      display: block
+        li
+          width: 250px
+          a
+            display: block
+            padding: 5px
+            width: 100%
+      ul.fallback
+        display: none
+    li:hover
+      ul.fallback
+        display: block
 
 #atc
   #nav
     background-color: $color-atc
-    ul ul
-      // background-color: $color-atc
-      li a
-        +link-colors($font-white, $color-atc, $font-white, $font-white, $font-white)
+    ul ul li a
+      +link-colors($font-white, $color-atc, $font-white, $font-white, $font-white)
 
 #star
   #nav
     background-color: $color-star
-    ul ul
-      // background-color: $color-star
-      li a
-        +link-colors($font-white, $color-star, $font-white, $font-white, $font-white)
+    ul ul li a
+      +link-colors($font-white, $color-star, $font-white, $font-white, $font-white)

@@ -1,0 +1,240 @@
+/* Hero
+  -----------------------
+
+#hero
+  max-width: 1400px
+  margin: 0 auto
+  h1
+    line-height: 1
+    margin: 0
+    font-size: 25px
+    color: $font-white
+    white-space: nowrap
+  ul, ol
+    list-style-position: inside
+  a
+    display: inline-block
+    font-size: 20px
+    font-weight: 300
+
+  +breakpoint($tablet)
+    h1
+      font-size: 35px
+    a
+      font-size: 25px
+
+  +breakpoint($desktop)
+    h1
+      font-size: 55px
+    a
+      font-size: 35px
+
+#atc #hero a
+  color: $color-atc
+
+#star #hero a
+  color: $color-star
+
+// FIXME ccm: Add no-js default
+
+.responsive-height
+  position: relative
+  height: 0
+  padding: 0 0 43% 0
+  overflow: visible
+  .inner
+    position: absolute
+    width: 100%
+    height: 100%
+    overflow: hidden
+
+.iosslider
+  width: 100%
+  height: 600px
+  overflow: hidden
+  .container
+    position: relative
+  .slider
+    width: 100%
+    height: 100%
+  .slide
+    position: relative
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    .container
+      height: 100%
+
+.hero1, .hero2, .hero3, .hero4
+  &:after
+    content: ""
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background: image-url("heroes/fade-283.png") 0 0 repeat-x
+
++breakpoint($tablet)
+  .hero1, .hero2, .hero3, .hero4
+    &:after
+      background: image-url("heroes/fade-420.png") 0 0 repeat-x
+
++breakpoint($desktop)
+  .hero1, .hero2, .hero3, .hero4
+    &:after
+      background: image-url("heroes/fade.png") 0 0 repeat-x
+
+#atc
+  .hero1, .hero2, .hero3, .hero4
+    background-color: #000
+  .hero1
+    background: image-url("heroes/atc-hero-1.jpg") 50% 0 no-repeat
+  .hero2
+    background: image-url("heroes/atc-hero-2.jpg") 50% 0 no-repeat
+  .hero3
+    background: image-url("heroes/atc-hero-3.jpg") 50% 0 no-repeat
+  .hero4
+    background: image-url("heroes/atc-hero-4.jpg") 50% 0 no-repeat
+
+#star
+  .hero1
+    background: image-url("heroes/star-hero-1-660.jpg") 50% 0 no-repeat
+  .hero2
+    background: image-url("heroes/star-hero-2-660.jpg") 50% 0 no-repeat
+  .hero3
+    background: image-url("heroes/star-hero-3-660.jpg") 50% 0 no-repeat
+  .hero4
+    background: image-url("heroes/star-hero-4-old-660.jpg") 50% 0 no-repeat
+
+  +breakpoint($tablet)
+    .hero1
+      background: image-url("heroes/star-hero-1-980.jpg") 50% 0 no-repeat
+    .hero2
+      background: image-url("heroes/star-hero-2-980.jpg") 50% 0 no-repeat
+    .hero3
+      background: image-url("heroes/star-hero-3-980.jpg") 50% 0 no-repeat
+    .hero4
+      background: image-url("heroes/star-hero-4-old-980.jpg") 50% 0 no-repeat
+
+  +breakpoint($desktop)
+    .hero1
+      background: image-url("heroes/star-hero-1.jpg") 50% 0 no-repeat
+    .hero2
+      background: image-url("heroes/star-hero-2.jpg") 50% 0 no-repeat
+    .hero3
+      background: image-url("heroes/star-hero-3.jpg") 50% 0 no-repeat
+    .hero4
+      background: image-url("heroes/star-hero-4-old.jpg") 50% 0 no-repeat
+
+
+.text, .fade1, .fade2, .fade3, .swish1, .swish2
+  z-index: 998
+.text, .swish1, .swish2, .fade3
+  position: absolute
+  bottom: 25px
+  left: 125px
+  right: 0
+.fade1, .fade2, .fade3, .swish1, .swish2
+  opacity: 0
+.swish1, .swish2
+  left: 525px
+.swish1
+  bottom: 59px
+
++breakpoint($tablet)
+  .text, .swish1, .swish2, .fade3
+    bottom: 40px
+  .swish1
+    bottom: 79px
+
++breakpoint($desktop)
+  .text, .swish1, .swish2, .fade3
+    bottom: 50px
+  .swish1
+    bottom: 111px
+
+.prev-slide, .next-slide
+  position: absolute
+  top: -145px
+  width: 27px
+  height: 29px
+  z-index: 2
+.prev-slide
+  left: 20px
+  background: image-url("arw-l.png") 0 0 no-repeat
+  &:hover
+    background-image: image-url("arw-l-ro.png")
+.next-slide
+  right: 20px
+  background: image-url("arw-r.png") 0 0 no-repeat
+  &:hover
+    background-image: image-url("arw-r-ro.png")
+.slider-buttons
+  position: absolute
+  bottom: 10px
+  right: 85px
+  width: 77px
+  height: 11px
+  .button
+    float: left
+    width: 11px
+    height: 11px
+    margin-right: 11px
+    +border-radius(11px)
+    &:last-child
+      margin-right: 0
+
++breakpoint($tablet)
+  .prev-slide, .next-slide
+    top: -230px
+  .prev-slide
+    left: 25px
+  .next-slide
+    right: 25px
+  .slider-buttons
+    bottom: 25px
+    right: 76px
+    width: 79px
+    height: 13px
+    .button
+      width: 13px
+      height: 13px
+      margin-right: 9px
+      +border-radius(13px)
+
++breakpoint($desktop)
+  .prev-slide, .next-slide
+    top: -315px
+  .prev-slide
+    left: 50px
+  .next-slide
+    right: 50px
+  .slider-buttons
+    bottom: 28px
+    right: 85px
+    width: 101px
+    height: 17px
+    .button
+      width: 17px
+      height: 17px
+      margin-right: 11px
+      +border-radius(17px)
+
+#atc .slider-buttons
+  .button
+    background: $color-white
+    &:hover
+      background: $color-atc
+  .selected
+    background: $color-atc
+
+#star .slider-buttons
+  .button
+    background: $color-white
+    &:hover
+      background: $color-star
+  .selected
+    background: $color-star
+
