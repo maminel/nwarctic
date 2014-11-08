@@ -10,41 +10,94 @@
     padding-right: span(2 of 16 wide)
 
 .gallery-item
+  position: relative
   list-style: none
+  overflow: hidden
+  iframe
+    position: absolute
+    left: 50%
 
 +breakpoint(max-width $tablet)
+  #grid
+    h2
+      margin-top: 0
+    ul
+      width: 274px
+      margin: 0 auto
   .gallery-item
-    +span(3 of 6)
+    +span(6 of 6)
+    width: 274px
+    height: 206px
     margin-bottom: gutter(6)
-    &:nth-child(2n+1)
-      +last
-    &:nth-child(7),
-    &:nth-child(8),
-    &:nth-child(9),
-    &:last-child
-      display: none
-
-+breakpoint($tablet $desktop)
-  .gallery-item
-    +span(3 of 9)
-    margin-bottom: gutter(9)
+    clear: both
+    iframe
+      margin-left: -137px
     &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4),
     &:nth-child(5),
     &:nth-child(7),
+    &:nth-child(9)
+      display: none
+  .button
+    position: relative
+    height: 65px
+    font-size: 25px
+    font-weight: 300
+    a
+      position: absolute
+      bottom: 15px
+      right: 25px
+      +link-colors($font-white, $font-white, $font-white, $font-white, $font-white)
+
++breakpoint($tablet $desktop)
+  #grid h2
+    margin-top: 0
+  .gallery-item
+    +span(3 of 9)
+    height: 206px
+    margin-bottom: gutter(9)
+    iframe
+      margin-left: -137px
+    p
+      margin: 15px
+      font-size: 18px
+      font-weight: 300
+      color: $font-white
+    em
+      display: block
+    span
+      display: block
+      font-weight: 500
+    &:nth-child(3),
+    &:nth-child(6),
+    &:nth-child(9),
     &:last-child
       +last
+  .button
+    position: relative
+    height: 65px
+    font-size: 25px
+    font-weight: 300
+    a
+      position: absolute
+      bottom: 15px
+      right: 25px
+      +link-colors($font-white, $font-white, $font-white, $font-white, $font-white)
 
 +breakpoint($desktop)
   #grid h2
     margin: 0 0 36px span(2 of 16 wide)
+    // FIXME ccm: Moved to typography.
     font-size: 30px
   .gallery-item
     +span(4 of 12)
     height: 206px
     margin-bottom: gutter(12)
+    iframe
+      margin-left: -137px
     p
       margin: 24px
-      padding: left
       font-size: 22px
       font-weight: 300
       color: $font-white
