@@ -41,7 +41,6 @@ Rails.application.routes.draw do
   get 'star/watch_video',  to: 'star#watch_video',        as: :star_watch_video
   get 'star/inquire',      to: 'star#inquire',            as: :star_inquire
   get 'star/for_me',       to: 'star#for_me',             as: :star_for_me
-  get 'star/inquiry_form', to: 'star#inquiry_form',       as: :star_inquiry_form
   get 'star/careers',      to: 'star#careers',            as: :star_careers
   get 'star/academics',    to: 'star#academics',          as: :star_academics
   get 'star/schools',      to: 'star#schools',            as: :star_schools

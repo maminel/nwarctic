@@ -22,9 +22,6 @@ class StarController < ApplicationController
   def for_me
   end
 
-  def inquiry_form
-  end
-
   def careers
   end
 
