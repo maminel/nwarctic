@@ -1,0 +1,95 @@
+/* Grid
+  -----------------------
+
+.gallery
+  margin: 0 auto
+  +clearfix
+
+  +breakpoint($desktop)
+    padding-left: span(2 of 16 wide)
+    padding-right: span(2 of 16 wide)
+
+.gallery-item
+  list-style: none
+
++breakpoint(max-width $tablet)
+  .gallery-item
+    +span(3 of 6)
+    margin-bottom: gutter(6)
+    &:nth-child(2n+1)
+      +last
+    &:nth-child(7),
+    &:nth-child(8),
+    &:nth-child(9),
+    &:last-child
+      display: none
+
++breakpoint($tablet $desktop)
+  .gallery-item
+    +span(3 of 9)
+    margin-bottom: gutter(9)
+    &:nth-child(2),
+    &:nth-child(5),
+    &:nth-child(7),
+    &:last-child
+      +last
+
++breakpoint($desktop)
+  h2
+    margin-left: span(2 of 16 wide)
+    margin-bottom: 36px
+    font-size: 30px
+  .gallery-item
+    +span(4 of 12)
+    height: 206px
+    margin-bottom: gutter(12)
+    p
+      margin: 24px
+      padding: left
+      font-size: 22px
+      font-weight: 300
+      color: $font-white
+    em
+      display: block
+    span
+      display: block
+      font-weight: 500
+    &:nth-child(3),
+    &:nth-child(6),
+    &:nth-child(9),
+    &:last-child
+      +last
+  .button
+    position: relative
+    height: 85px
+    font-size: 30px
+    font-weight: 300
+    a
+      position: absolute
+      bottom: 22px
+      right: 31px
+      +link-colors($font-white, $font-white, $font-white, $font-white, $font-white)
+
+// .video
+//   +breakpoint(max-width $tablet)
+//     +span(8 of 8)
+
+//   +breakpoint($tablet $desktop)
+//     +span(6 of 9)
+
+//   +breakpoint($desktop)
+//     +span(6 of 12)
+
+#atc
+  h2
+    color: $color-atc
+
+  .gallery-item
+    background-color: $color-atc
+
+#star
+  h2
+    color: $color-star
+
+  .gallery-item
+    background-color: $color-star

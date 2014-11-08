@@ -49,30 +49,50 @@
 
 %section.panel#grid
   .container
-    %h2.ctr A unique opportunity for Alaska's students and families.
-    %br
+    %h2 A unique opportunity for Alaska's students and families.
     .grid
       %ul.gallery
-        %li.gallery_item.long
-          %img{alt: '', src: 'http://www.placehold.it/622x300/FFFF99&text=Video'}
-        %li.gallery_item
-          %a{href: 'https://www.dropbox.com/s/j8nvlucrppuz0ka/STNW_ATC_HABEGER_Hi-RES-8054.jpg?dl=0', title: ''} Image
-        %li.gallery_item
-          %p Opportunity: In-demand careers: Culinary, Health Care, Education, Process Technology
-        %li.gallery_item
-          %p Student Life: A safe, exciting residence life program designed with parent guidance.
-        %li.gallery_item
-          %a{href: 'https://www.dropbox.com/s/ud2f9xo79i8z057/ETT%27s%20with%20attitude%21.JPG?dl=0', title: ''} Image
-        %li.gallery_item.long
-          %img{alt: '', src: 'http://www.placehold.it/621x300/FFFF99&text=Video'}
-        %li.gallery_item
-          %a{href: 'https://www.dropbox.com/s/ggkqvt6jbluynph/SAMPLE%2014.png?dl=0', title: ''} Image
-        %li.gallery_item.long
-          %img{alt: '', src: 'http://www.placehold.it/621x300/FFFF99&text=Video'}
-        %li.gallery_item
-          %a{href: 'https://www.dropbox.com/s/hu678ilc45ldapa/DSC_0008.JPG?dl=0', title: ''} Image
-      %p.ctr
-        %button Inquire
+        %li.gallery-item
+          %iframe{src: '//player.vimeo.com/video/111178598',
+                  width: '274',
+                  height: '206',
+                  frameborder: '0',
+                  webkitallowfullscreen: '',
+                  mozallowfullscreen: '',
+                  allowfullscreen: ''}
+        %li.gallery-item
+        %li.gallery-item
+          %p
+            %em Opportunity
+            %span In-demand careers:
+            Culinary, Health Care, Education, Process Technology
+        %li.gallery-item
+          %p
+            %span Student Life:
+            A safe, exciting residence life program designed with parent guidance.
+        %li.gallery-item
+        %li.gallery-item
+          %iframe{src: '//player.vimeo.com/video/111179378',
+                  width: '274',
+                  height: '206',
+                  frameborder: '0',
+                  webkitallowfullscreen: '',
+                  mozallowfullscreen: '',
+                  allowfullscreen: ''}
+        %li.gallery-item
+        %li.gallery-item
+          %iframe{src: '//player.vimeo.com/video/111178638',
+                  width: '274',
+                  height: '206',
+                  frameborder: '0',
+                  webkitallowfullscreen: '',
+                  mozallowfullscreen: '',
+                  allowfullscreen: ''}
+        %li.gallery-item
+          %p
+            %em Will need some words here. Waiting for background image.
+        %li.gallery-item.button
+          = link_to 'Inquire', star_inquire_path, title: ''
 
 %section.panel.star-panel#gifts
   .container
