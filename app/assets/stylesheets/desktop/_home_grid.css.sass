@@ -6,8 +6,10 @@
   +clearfix
 
   +breakpoint($desktop)
-    padding-left: span(2 of 16 wide)
-    padding-right: span(2 of 16 wide)
+    // padding-left: span(2 of 16 wide)
+    // padding-right: span(2 of 16 wide)
+    padding-left: span(1 of 16 wide)/2
+    padding-right: span(1 of 16 wide)/2
 
 .gallery-item
   position: relative
@@ -87,15 +89,21 @@
 
 +breakpoint($desktop)
   #grid h2
-    margin: 0 0 36px span(2 of 16 wide)
+    // margin: 0 0 36px span(2 of 16 wide)
+    margin: 0 0 36px span(1 of 16 wide)/2
     // FIXME ccm: Moved to typography.
     font-size: 30px
   .gallery-item
-    +span(4 of 12)
-    height: 206px
-    margin-bottom: gutter(12)
+    // +span(4 of 12)
+    +span(5 of 15)
+    // for width: '274'
+    // height: 206px
+    height: 260px
+    // margin-bottom: gutter(12)
+    margin-bottom: gutter(15)
     iframe
-      margin-left: -137px
+      // margin-left: -137px
+      margin-left: -173px
     p
       margin: 24px
       font-size: 22px
@@ -134,7 +142,8 @@
 
 #atc
   #grid h2
-    margin: 0 span(2 of 16 wide)/2 36px
+    // margin: 0 span(2 of 16 wide)/2 36px
+    margin: 0 span(1 of 16 wide)/2 36px
 
   .gallery-item
     background-color: $color-atc
