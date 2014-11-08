@@ -65,16 +65,29 @@ header
   width: 125px
   height: 68px
   margin: 20px 0 0 10px
-  background: image-url("logos/star-logo-125.png") 0 0 no-repeat
 
   +breakpoint($tablet)
     width: 190px
     height: 103px
     margin: 25px 0 0 40px
-    background: image-url("logos/star-logo.png") 0 0 no-repeat
 
   +breakpoint($desktop)
     margin: 30px 0 0 80px
+
+#atc
+  .logo
+    background: image-url("logos/atc-logo-125.png") 0 0 no-repeat
+
+    +breakpoint($tablet)
+      background: image-url("logos/atc-logo.png") 0 0 no-repeat
+
+#star
+  .logo
+    background: image-url("logos/star-logo-125.png") 0 0 no-repeat
+
+    +breakpoint($tablet)
+      background: image-url("logos/star-logo.png") 0 0 no-repeat
+
 
 /* Footer
   -----------------------
@@ -100,13 +113,13 @@ header
   +breakpoint($tablet)
     margin-top: 60px
 
-#atc footer
+#atc .footer
   background-color: $color-atc
 
-#star footer
+#star .footer
   background-color: $color-star
 
-#atc footer, #star footer
+#atc .footer, #star .footer
   padding-bottom: 40px
   color: $font-white
   a
