@@ -7,33 +7,46 @@
     .slider
       .slide.hero1
         .container
-          .text
-            %h1.thin.fade1
-              Alaska Technical Center is the best choice for people who are serious about preparing for a career.
-            .fade2
+          %h1.text
+            %span.light.fade1
+              Alaska Technical Center
+            %span.thin.fade2
+              is the
+              %br
+              best choice for people who are
+              %br
+              serious about preparing for a
+              %br
+              career.
+              %br
               %a{href: 'https://www.dropbox.com/s/y2arkhfqp2wglpx/SAMPLE%201.png?dl=0', title: ''} Image
       .slide.hero2
         .container
-          .text
-            %h1 Career Training
-            %p We're all about jobs, preparing you for high paying, high-demand careers.
+          %h1.light.swish1 We're all about jobs
+          %h1.thin.swish2
+            Preparing you for high paying,
+            %br
+            high-demand careers.
+            %br
             %a{href: 'https://www.dropbox.com/s/7ghnaa87qqp3srs/SAMPLE%2019.JPG?dl=0', title: ''} Image
       .slide.hero3
         .container
-          .text
-            %h1 Alaska's Best Kept Secret. Why?
-            %ol
-              %li Amazing facilities
-              %li Quality programs
-              %li All right here in Alaska
+          %h1.light.swish1 Alaska's Best Kept Secret
+          %h1.thin.swish2
+            Amazing facilities, quality programs.
+            %br
+            All right here in Alaska.
             %a{href: '#', title: ''} Learn More
+            %br
             %a{href: 'https://www.dropbox.com/s/k9co4tuckn2nh08/STNW_ATC_HABEGER_Hi-RES-7782.jpg?dl=0', title: ''} Image
       .slide.hero4
         .container
-          .text
-            %h1 Invest in yourself.
-            %p We're here to help.
+          %h1.light.swish1 Invest in yourself.
+          %h1.thin.swish2
+            We're here to help.
+            %br
             %a{href: '#', title: ''} Apply Now
+            %br
             %a{href: 'https://www.dropbox.com/s/76enivuhxvr2yod/STNW_ATC_HABEGER_Hi-RES-8074.jpg?dl=0', title: ''} Image
     .container
       .prev-slide
@@ -47,28 +60,42 @@
 %section.panel#grid
   .container
     .grid
-      %h3 We set high expectations and provide high levels of support for our students. Our focus on people results in your success.
+      %h2 We set high expectations and provide high levels of support for our students. Our focus on people results in your success.
       %ul.gallery
-        %li.gallery-item.long
-          %img{alt: '', src: 'http://www.placehold.it/622x300/FFFF99&text=Video'}
         %li.gallery-item
-          %a{href: 'https://www.dropbox.com/s/t1c8pb3u489z1b1/4.jpg?dl=0', title: ''} Image
+          %iframe{src: '//player.vimeo.com/video/111178596',
+                  width: '274',
+                  height: '206',
+                  frameborder: '0',
+                  webkitallowfullscreen: '',
+                  mozallowfullscreen: '',
+                  allowfullscreen: ''}
+        %li.gallery-item
         %li.gallery-item
           %p You can do college and career training at Alaska Technical Center.
         %li.gallery-item
           %p Build your education, career and life.
         %li.gallery-item
-          %a{href: 'https://www.dropbox.com/s/s8a811045hu32zy/SAMPLE%2016.jpg?dl=0', title: ''} Image
-        %li.gallery-item.long
-          %img{alt: '', src: 'http://www.placehold.it/621x300/FFFF99&text=Video'}
         %li.gallery-item
-          %a{href: 'https://www.dropbox.com/s/8i6sx9sxdo4gqsi/STNW_ATC_HABEGER_Hi-RES-8082.jpg?dl=0', title: ''} Image
-        %li.gallery-item.long
-          %img{alt: '', src: 'http://www.placehold.it/621x300/FFFF99&text=Video'}
+          %iframe{src: '//player.vimeo.com/video/111178601',
+                  width: '274',
+                  height: '206',
+                  frameborder: '0',
+                  webkitallowfullscreen: '',
+                  mozallowfullscreen: '',
+                  allowfullscreen: ''}
         %li.gallery-item
-          %a{href: 'https://www.dropbox.com/s/cs90whta5xt5jd1/SAMPLE%2017.png?dl=0', title: ''} Image
-      %p.ctr
-        %button Apply
+        %li.gallery-item
+          %iframe{src: '//player.vimeo.com/video/111178637',
+                  width: '274',
+                  height: '206',
+                  frameborder: '0',
+                  webkitallowfullscreen: '',
+                  mozallowfullscreen: '',
+                  allowfullscreen: ''}
+        %li.gallery-item
+        %li.gallery-item.button
+          = link_to 'Apply', atc_apply_path, title: ''
 
 %section.panel.atc-panel#testimonials
   .container
