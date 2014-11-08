@@ -1,14 +1,14 @@
 !!!
-%html.no-js{:lang => "en"}
+%html.no-js{lang: 'en'}
   = head
   %body
     .wrapper
       = browsehappy
-      %header{:role => "banner"}
+      %header{role: 'banner'}
         .container
           = render 'layouts/star/logo'
           = render 'layouts/star/navigation'
-      #main{:role => "main"}
+      #main{role: 'main'}
         = yield
       = render 'layouts/star/footer'
     = scripts

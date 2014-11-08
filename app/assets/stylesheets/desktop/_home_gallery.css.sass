@@ -1,0 +1,56 @@
+/* Gallery
+  -----------------------
+
+.gallery
+  margin: 0 auto
+  img,
+  img.long
+    max-width: 100%
+    height: auto
+  +clearfix
+
+  +breakpoint($desktop)
+    padding-left: span(2 of 16 wide)
+    padding-right: span(2 of 16 wide)
+
+.gallery_item
+  list-style: none
+
+  +breakpoint(max-width $tablet)
+    +span(3 of 6)
+    margin-bottom: gutter(6)
+    &:nth-child(2n+1)
+      +last
+    &:nth-child(7),
+    &:nth-child(8),
+    &:nth-child(9),
+    &:last-child
+      display: none
+
+  +breakpoint($tablet $desktop)
+    +span(3 of 9)
+    margin-bottom: gutter(9)
+    &:nth-child(2),
+    &:nth-child(5),
+    &:nth-child(7),
+    &:last-child
+      +last
+
+  +breakpoint($desktop)
+    +span(3 of 12)
+    height: 202px
+    margin-bottom: gutter(12)
+    &:nth-child(3),
+    &:nth-child(6),
+    &:last-child
+      +last
+
+.long
+  +breakpoint(max-width $tablet)
+    +span(8 of 8)
+
+  +breakpoint($tablet $desktop)
+    +span(6 of 9)
+
+  +breakpoint($desktop)
+    +span(6 of 12)

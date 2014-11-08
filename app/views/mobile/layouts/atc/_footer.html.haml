@@ -4,19 +4,19 @@
       %nav
         %ul
           %li
-            = link_to 'About', about_path, :title => ''
+            = link_to 'About', about_path, title: ''
             %li &#124;
           %li
-            = link_to 'Contact', contact_path, :title => ''
+            = link_to 'Contact', contact_path, title: ''
       .phone-number
         %p
           %span.light Toll Free:
-          %a{:href => 'callto://1-866-442-1607', :title => 'Toll Free Number', :class => 'callto'} 800-478-3733
-          %a{:href => 'tel://1-866-442-1607', :title => 'Toll Free Number', :class => 'tel'} 800-478-3733
+          %a{href: 'callto://1-866-442-1607', title: 'Toll Free Number', class: 'callto'} 800-478-3733
+          %a{href: 'tel://1-866-442-1607', title: 'Toll Free Number', class: 'tel'} 800-478-3733
         %p
           %span.light Phone:
-          %a{:href => 'callto://907-442-1607', :title => 'Main Number', :class => 'callto'} 907-442-1500
-          %a{:href => 'tel://907-442-1607', :title => 'Main Number', :class => 'tel'} 907-442-1500
+          %a{href: 'callto://907-442-1607', title: 'Main Number', class: 'callto'} 907-442-1500
+          %a{href: 'tel://907-442-1607', title: 'Main Number', class: 'tel'} 907-442-1500
         %p
           %span.light Email:
           = mail_to 'atc@nwarctic.org'

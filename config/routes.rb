@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root :to => 'splash#index'
+  root           to: 'splash#index'
   get 'splash',  to: 'splash#index',  as: :splash
   get 'about',   to: 'pages#about',   as: :about
   get 'contact', to: 'pages#contact', as: :contact
