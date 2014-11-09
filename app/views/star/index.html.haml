@@ -63,7 +63,7 @@
       %li.grid-item
         .item-wrapper
           %p
-            %em Will need some words here.
+            %em Skills, compassion, service and opportunity.
       %li.grid-item
         .item-wrapper
           %p
@@ -77,7 +77,7 @@
       %li.grid-item
         .item-wrapper
           %p
-            %em Will need some words here.
+            %em Make a quality life for yourself, and future generations.
       %li.grid-item
         .video-wrapper
           %iframe{src: '//player.vimeo.com/video/111179378',
@@ -90,7 +90,7 @@
       %li.grid-item
         .item-wrapper
           %p
-            %em Will need some words here.
+            %em Part art, part science, entirely focused on career preparation.
       %li.grid-item
         .video-wrapper
           %iframe{src: '//player.vimeo.com/video/111178638',
@@ -103,41 +103,27 @@
       %li.grid-item
         .item-wrapper
           %p
-            %em Will need some words here.
+            %em Today's learners; tomorrow's Alaska teacher-leaders.
       %li.grid-item.button
         = link_to 'Inquire', star_inquire_path, title: ''
 
-%section.panel.star-panel#gifts
+%section.panel#gifts
   .container
     .gifts
-      %h2 Our students find their gifts.
-      %p At Star students have the opportunity to finish the last two years of high school, while finding their true gifts.
-      %p By exploring one of our four career pathways, they work toward industry certifications and college credits.
-      %ol
-        %li
-          Culinary Arts
-          %br
-          %a{href: 'https://www.dropbox.com/s/mx8q3x2isvh2rrv/IMG_6333.jpg?dl=0', title: ''} Image
-          %br
-          %em Image Rollover: Part art, part science, entirely focused on career preparation.
-        %li
-          Education Careers
-          %br
-          %a{href: 'https://www.dropbox.com/s/o9aglh28fqx0rpk/SAMPLE%2011.png?dl=0', title: ''} Image
-          %br
-          %em Image Rollover: Today's learners; tomorrow's Alaska teacher-leaders.
-        %li
-          Health Care
-          %br
-          %a{href: 'https://www.dropbox.com/s/dbiqbp98kbl495l/STNW_ATC_HABEGER_Hi-RES-8069.jpg?dl=0', title: ''} Image
-          %br
-          %em Image Rollover: Skills, compassion, service and opportunity.
-        %li
-          Process Technology
-          %br
-          %a{href: 'https://www.dropbox.com/s/vx4po2o4ry68ayw/IMG_4881.jpg?dl=0', title: ''} Image
-          %br
-          %em Image Rollover: Make a quality life for yourself, and future generations.
+      .students
+        %h2 Our students find their gifts.
+        %p At Star students have the opportunity to finish the last two years of high school, while finding their true gifts.
+        %p By exploring one of our four career pathways, they work toward industry certifications and college credits.
+      .careers
+        %ul
+          %li
+            = link_to 'Culinary Arts', star_careers_path, title: ''
+          %li
+            = link_to 'Education Careers', star_careers_path, title: ''
+          %li
+            = link_to 'Health Care', star_careers_path, title: ''
+          %li
+            = link_to 'Process Technology', star_careers_path, title: ''
 
 %section.panel#revolutionary
   .container

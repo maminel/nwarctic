@@ -33,12 +33,17 @@
   span
     display: block
     font-weight: 500
-.button
-  position: relative
-  font-weight: 300
-  a
-    position: absolute
-    +link-colors($font-white, $font-white, $font-white, $font-white, $font-white)
+
+// FIXME ccm: CSS precedents is a problem here.
+// Conflicts with typography without #atc/#star.
+// Will also need to move to forms.
+#atc, #star
+  .button
+    position: relative
+    font-weight: 300
+    a
+      position: absolute
+      +link-colors($font-white, $font-white, $font-white, $font-white, $font-white)
 
 +breakpoint(max-width $tablet)
   #grid ul

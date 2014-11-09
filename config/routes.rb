@@ -47,5 +47,5 @@ Rails.application.routes.draw do
   get 'star/programs',     to: 'star#programs',           as: :star_programs
   get 'star/student_life', to: 'star#student_life',       as: :star_student_life
   get 'star/safe',         to: 'star#safe',               as: :star_safe
-  get 'star/residential',  to: 'star#residential',         as: :star_residential
+  get 'star/residential',  to: 'star#residential',        as: :star_residential
 end

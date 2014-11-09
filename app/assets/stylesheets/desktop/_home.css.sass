@@ -1,2 +1,55 @@
 @import "desktop//home_heroes"
 @import "desktop//home_grid"
+
+#gifts
+  background-color: $bg-panel-star
+  .container
+    position: relative
+    border-color: $bg-panel-star
+    &:after
+      content: ""
+      position: absolute
+      top: 125%
+      left: 10px
+      border-top: 60px solid $bg-panel-star
+      border-top-color: inherit
+      border-left: 60px solid transparent
+      border-right: 60px solid transparent
+      z-index: 1
+
+.gifts
+  +clearfix
+  // to align careers with preceding grid needed to
+  // add padding and use 15 span grid for desktop
+  +breakpoint($desktop)
+    padding-right: span(1 of 16 wide)/2
+    padding-left: span(1 of 16 wide)/2
+
+.students
+  +span(6 of 6)
+
+  +breakpoint($tablet)
+    +span(6 of 9)
+
+  +breakpoint($desktop)
+    +span(8 of 15)
+    margin-left: -(span(1 of 16 wide)/2)
+
+.careers
+  +span(6 of 6)
+  ul
+    margin: 0
+    list-style-type: none
+  li
+    margin-bottom: 23px
+    padding-left: 0
+    &:last-child
+      margin-bottom: 0
+  a
+    font-size: 24px
+
+  +breakpoint($tablet)
+    +span(3 of 9 last)
+
+  +breakpoint($desktop)
+    +span(5 of 15 last)
