@@ -1,23 +1,40 @@
 /* Grid
   -----------------------
 
-.gallery
-  margin: 0 auto
-  +clearfix
+#grid
+  h2
+    margin-top: 0
+  ul
+    margin: 0 auto
+    +clearfix
 
-  +breakpoint($desktop)
-    // padding-left: span(2 of 16 wide)
-    // padding-right: span(2 of 16 wide)
-    padding-left: span(1 of 16 wide)/2
-    padding-right: span(1 of 16 wide)/2
+    +breakpoint($desktop)
+      padding-left: span(1 of 16 wide)/2
+      padding-right: span(1 of 16 wide)/2
 
-.gallery-item
-  position: relative
+.grid-item
   list-style: none
   overflow: hidden
-  p
+
+.video-wrapper, .item-wrapper
+  position: relative
+  position: relative
+  padding-bottom: 75%
+  padding-bottom: 75%
+  height: 0
+  height: 0
+  iframe, p
     position: absolute
+    left: 0
+    width: 100%
+.video-wrapper
+  iframe
+    top: 0
+    height: 100%
+.item-wrapper
+  p
     bottom: 0
+    margin: 0
     font-weight: 300
     color: $font-white
   em
@@ -25,9 +42,6 @@
   span
     display: block
     font-weight: 500
-  iframe
-    position: absolute
-    left: 50%
 
 .button
   position: relative
@@ -37,20 +51,12 @@
     +link-colors($font-white, $font-white, $font-white, $font-white, $font-white)
 
 +breakpoint(max-width $tablet)
-  .grid
-    h2
-      margin-top: 0
-    ul
-      width: 274px
-      margin: 0 auto
-  .gallery-item
+  #grid ul
+    margin: 0 auto
+  .grid-item
     +span(6 of 6)
-    width: 274px
-    height: 206px
     margin-bottom: gutter(6)
     clear: both
-    iframe
-      margin-left: -137px
     &:nth-child(2),
     &:nth-child(3),
     &:nth-child(4),
@@ -66,16 +72,11 @@
       right: 25px
 
 +breakpoint($tablet $desktop)
-  #grid h2
-    margin-top: 0
-  .gallery-item
+  .grid-item
     +span(3 of 9)
-    height: 206px
     margin-bottom: gutter(9)
-    iframe
-      margin-left: -137px
     p
-      margin: 15px
+      padding: 15px
       font-size: 18px
     &:nth-child(3),
     &:nth-child(6),
@@ -91,21 +92,12 @@
 
 +breakpoint($desktop)
   #grid h2
-    // margin: 0 0 36px span(2 of 16 wide)
     margin: 0 0 36px span(1 of 16 wide)/2
-  .gallery-item
-    // +span(4 of 12)
+  .grid-item
     +span(5 of 15)
-    // for width: '274'...
-    // height: 206px
-    height: 260px
-    // margin-bottom: gutter(12)
     margin-bottom: gutter(15)
-    iframe
-      // margin-left: -137px
-      margin-left: -173px
     p
-      margin: 24px
+      padding: 24px
       font-size: 25px
     &:nth-child(3),
     &:nth-child(6),
@@ -119,24 +111,13 @@
       bottom: 22px
       right: 31px
 
-// .video
-//   +breakpoint(max-width $tablet)
-//     +span(8 of 8)
-
-//   +breakpoint($tablet $desktop)
-//     +span(6 of 9)
-
-//   +breakpoint($desktop)
-//     +span(6 of 12)
-
 #atc
   #grid h2
-    // margin: 0 span(2 of 16 wide)/2 36px
     margin: 0 span(1 of 16 wide)/2 36px
 
-  .gallery-item
+  .grid-item
     background-color: $color-atc
 
 #star
-  .gallery-item
+  .grid-item
     background-color: $color-star

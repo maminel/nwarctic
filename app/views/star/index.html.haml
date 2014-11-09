@@ -49,10 +49,10 @@
 
 %section.panel#grid
   .container
-    .grid
-      %h2 A unique opportunity for Alaska's students and families.
-      %ul.gallery
-        %li.gallery-item
+    %h2 A unique opportunity for Alaska's students and families.
+    %ul
+      %li.grid-item
+        .video-wrapper
           %iframe{src: '//player.vimeo.com/video/111178598',
                   width: '346',
                   height: '260',
@@ -60,18 +60,23 @@
                   webkitallowfullscreen: '',
                   mozallowfullscreen: '',
                   allowfullscreen: ''}
-        %li.gallery-item
-        %li.gallery-item
+      %li.grid-item
+        .item-wrapper
+      %li.grid-item
+        .item-wrapper
           %p
             %em Opportunity
             %span In-demand careers:
             Culinary, Health Care, Education, Process Technology
-        %li.gallery-item
+      %li.grid-item
+        .item-wrapper
           %p
             %span Student Life:
             A safe, exciting residence life program designed with parent guidance.
-        %li.gallery-item
-        %li.gallery-item
+      %li.grid-item
+        .item-wrapper
+      %li.grid-item
+        .video-wrapper
           %iframe{src: '//player.vimeo.com/video/111179378',
                   width: '346',
                   height: '260',
@@ -79,8 +84,10 @@
                   webkitallowfullscreen: '',
                   mozallowfullscreen: '',
                   allowfullscreen: ''}
-        %li.gallery-item
-        %li.gallery-item
+      %li.grid-item
+        .item-wrapper
+      %li.grid-item
+        .video-wrapper
           %iframe{src: '//player.vimeo.com/video/111178638',
                   width: '346',
                   height: '260',
@@ -88,11 +95,12 @@
                   webkitallowfullscreen: '',
                   mozallowfullscreen: '',
                   allowfullscreen: ''}
-        %li.gallery-item
+      %li.grid-item
+        .item-wrapper
           %p
             %em Will need some words here. Waiting for background image.
-        %li.gallery-item.button
-          = link_to 'Inquire', star_inquire_path, title: ''
+      %li.grid-item.button
+        = link_to 'Inquire', star_inquire_path, title: ''
 
 %section.panel.star-panel#gifts
   .container

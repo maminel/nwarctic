@@ -59,10 +59,10 @@
 
 %section.panel#grid
   .container
-    .grid
-      %h2 We set high expectations and provide high levels of support for our students. Our focus on people results in your success.
-      %ul.gallery
-        %li.gallery-item
+    %h2 We set high expectations and provide high levels of support for our students. Our focus on people results in your success.
+    %ul.gallery
+      %li.grid-item
+        .video-wrapper
           %iframe{src: '//player.vimeo.com/video/111178596',
                   width: '274',
                   height: '206',
@@ -70,13 +70,18 @@
                   webkitallowfullscreen: '',
                   mozallowfullscreen: '',
                   allowfullscreen: ''}
-        %li.gallery-item
-        %li.gallery-item
+      %li.grid-item
+        .item-wrapper
+      %li.grid-item
+        .item-wrapper
           %p You can do college and career training at Alaska Technical Center.
-        %li.gallery-item
+      %li.grid-item
+        .item-wrapper
           %p Build your education, career and life.
-        %li.gallery-item
-        %li.gallery-item
+      %li.grid-item
+        .item-wrapper
+      %li.grid-item
+        .video-wrapper
           %iframe{src: '//player.vimeo.com/video/111178601',
                   width: '274',
                   height: '206',
@@ -84,8 +89,10 @@
                   webkitallowfullscreen: '',
                   mozallowfullscreen: '',
                   allowfullscreen: ''}
-        %li.gallery-item
-        %li.gallery-item
+      %li.grid-item
+        .item-wrapper
+      %li.grid-item
+        .video-wrapper
           %iframe{src: '//player.vimeo.com/video/111178637',
                   width: '274',
                   height: '206',
@@ -93,9 +100,10 @@
                   webkitallowfullscreen: '',
                   mozallowfullscreen: '',
                   allowfullscreen: ''}
-        %li.gallery-item
-        %li.gallery-item.button
-          = link_to 'Apply', atc_apply_path, title: ''
+      %li.grid-item
+        .item-wrapper
+      %li.grid-item.button
+        = link_to 'Apply', atc_apply_path, title: ''
 
 %section.panel.atc-panel#testimonials
   .container
