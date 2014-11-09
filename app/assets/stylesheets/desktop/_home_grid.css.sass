@@ -15,9 +15,26 @@
   position: relative
   list-style: none
   overflow: hidden
+  p
+    position: absolute
+    bottom: 0
+    font-weight: 300
+    color: $font-white
+  em
+    display: block
+  span
+    display: block
+    font-weight: 500
   iframe
     position: absolute
     left: 50%
+
+.button
+  position: relative
+  font-weight: 300
+  a
+    position: absolute
+    +link-colors($font-white, $font-white, $font-white, $font-white, $font-white)
 
 +breakpoint(max-width $tablet)
   .grid
@@ -42,15 +59,11 @@
     &:nth-child(9)
       display: none
   .button
-    position: relative
     height: 65px
     font-size: 25px
-    font-weight: 300
     a
-      position: absolute
       bottom: 15px
       right: 25px
-      +link-colors($font-white, $font-white, $font-white, $font-white, $font-white)
 
 +breakpoint($tablet $desktop)
   #grid h2
@@ -64,28 +77,17 @@
     p
       margin: 15px
       font-size: 18px
-      font-weight: 300
-      color: $font-white
-    em
-      display: block
-    span
-      display: block
-      font-weight: 500
     &:nth-child(3),
     &:nth-child(6),
     &:nth-child(9),
     &:last-child
       +last
   .button
-    position: relative
     height: 65px
     font-size: 25px
-    font-weight: 300
     a
-      position: absolute
       bottom: 15px
       right: 25px
-      +link-colors($font-white, $font-white, $font-white, $font-white, $font-white)
 
 +breakpoint($desktop)
   #grid h2
@@ -96,7 +98,7 @@
   .gallery-item
     // +span(4 of 12)
     +span(5 of 15)
-    // for width: '274'
+    // for width: '274'...
     // height: 206px
     height: 260px
     // margin-bottom: gutter(12)
@@ -106,29 +108,18 @@
       margin-left: -173px
     p
       margin: 24px
-      font-size: 22px
-      font-weight: 300
-      color: $font-white
-    em
-      display: block
-    span
-      display: block
-      font-weight: 500
+      font-size: 25px
     &:nth-child(3),
     &:nth-child(6),
     &:nth-child(9),
     &:last-child
       +last
   .button
-    position: relative
     height: 85px
     font-size: 30px
-    font-weight: 300
     a
-      position: absolute
       bottom: 22px
       right: 31px
-      +link-colors($font-white, $font-white, $font-white, $font-white, $font-white)
 
 // .video
 //   +breakpoint(max-width $tablet)
