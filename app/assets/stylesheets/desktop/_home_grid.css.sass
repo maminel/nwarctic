@@ -2,8 +2,6 @@
   -----------------------
 
 #grid
-  h2
-    margin-top: 0
   ul
     margin: 0 auto
     +clearfix
@@ -58,10 +56,10 @@
       display: none
   .button
     height: 65px
-    font-size: 25px
     a
       bottom: 15px
       right: 25px
+      font-size: 25px
 
 +breakpoint($tablet $desktop)
   .grid-item
@@ -77,14 +75,14 @@
       +last
   .button
     height: 65px
-    font-size: 25px
     a
       bottom: 15px
       right: 25px
+      font-size: 25px
 
 +breakpoint($desktop)
   #grid h2
-    margin: 0 0 36px span(1 of 16 wide)/2
+    margin: 0 0 34px span(1 of 16 wide)/2
   .grid-item
     +span(5 of 15)
     margin-bottom: gutter(15)
@@ -98,10 +96,10 @@
       +last
   .button
     height: 85px
-    font-size: 30px
     a
       bottom: 22px
       right: 31px
+      font-size: 30px
 
 #atc
   #grid h2

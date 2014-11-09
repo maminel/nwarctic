@@ -89,6 +89,31 @@ header
       background: image-url("logos/star-logo.png") 0 0 no-repeat
 
 
+/* Panels
+  -----------------------
+
+.panel
+  position: relative
+  padding: 40px 0
+  background-color: $bg-body
+  // &:after
+  //   +panel-shadow(.15)
+
+  +breakpoint($tablet)
+    padding: 45px 0
+
+  +breakpoint($desktop)
+    padding: 50px 0
+
+// FIXME ccm: Temporary.
+
+.star-panel
+  background-color: $bg-star-panel
+
+.atc-panel
+  background-color: $bg-atc-panel
+
+
 /* Footer
   -----------------------
 
