@@ -37,13 +37,20 @@ h1, h2, h3, h4, h5
 /* Highlighters
   -----------------------
 
-.highlight
-  background-color: yellow
+#atc
+  ::-moz-selection
+    background: $color-highlight-atc
+    text-shadow: none
 
-::-moz-selection
-  background: $color-highlight
-  text-shadow: none
+  ::selection
+    background: $color-highlight-atc
+    text-shadow: none
 
-::selection
-  background: $color-highlight
-  text-shadow: none
+#star
+  ::-moz-selection
+    background: $color-highlight-star
+    text-shadow: none
+
+  ::selection
+    background: $color-highlight-star
+    text-shadow: none
