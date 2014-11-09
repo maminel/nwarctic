@@ -11,17 +11,12 @@
     +breakpoint($desktop)
       padding-left: span(1 of 16 wide)/2
       padding-right: span(1 of 16 wide)/2
-
 .grid-item
   list-style: none
   overflow: hidden
-
 .video-wrapper, .item-wrapper
   position: relative
-  position: relative
   padding-bottom: 75%
-  padding-bottom: 75%
-  height: 0
   height: 0
   iframe, p
     position: absolute
@@ -37,12 +32,9 @@
     margin: 0
     font-weight: 300
     color: $font-white
-  em
-    display: block
   span
     display: block
     font-weight: 500
-
 .button
   position: relative
   font-weight: 300
@@ -121,3 +113,31 @@
 #star
   .grid-item
     background-color: $color-star
+    &:nth-child(2)
+      background: image-url("grid/class.jpg") 50% 0 no-repeat
+    &:nth-child(5)
+      background: image-url("grid/team.jpg") 50% 0 no-repeat
+    &:nth-child(7)
+      background: image-url("grid/writing.jpg") 50% 0 no-repeat
+    &:nth-child(9)
+      background: image-url("grid/nature.jpg") 50% 0 no-repeat
+
+    &:nth-child(2),
+    &:nth-child(5),
+    &:nth-child(7),
+    &:nth-child(9)
+      position: relative
+      p
+        display: none
+      &:hover
+        p
+          display: block
+          z-index: 2
+        &:after
+          content: ""
+          position: absolute
+          top: 0
+          right: 0
+          bottom: 0
+          left: 0
+          background: image-url("grid/roll-over.png") 0 0 no-repeat
