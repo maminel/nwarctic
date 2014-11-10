@@ -9,8 +9,44 @@ textarea
   resize: vertical
 
 
-/* Button
+/* Buttons
   -----------------------
 
-button
-  font-family: $font-family-button
+.flat-button
+  +span(6 of 6)
+  display: block
+  height: 65px
+  margin-top: 20px
+  padding-top: 20px
+  padding-right: 25px
+  font-size: 25px
+  font-weight: 300
+  text-align: right
+
+  +breakpoint($tablet)
+    +span(3 of 9 last)
+    height: 65px
+    margin-top: 30px
+    font-size: 25px
+
+  +breakpoint($desktop)
+    +span(5 of 15 last)
+    height: 85px
+    margin-top: 40px
+    margin-left: -(span(1 of 16 wide)/2)
+    padding-top: 27px
+    padding-right: 31px
+    font-size: 30px
+
+#atc
+  .flat-button
+    background-color: $color-atc
+    +link-colors($font-white, $font-white, $font-white, $font-white, $font-white)
+  &:hover
+    background-color: $color-atc-rgba
+
+#star .flat-button
+  background-color: $color-star
+  +link-colors($font-white, $font-white, $font-white, $font-white, $font-white)
+  &:hover
+    background-color: $color-star-rgba

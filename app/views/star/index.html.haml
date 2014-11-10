@@ -104,8 +104,9 @@
         .item-wrapper
           %p
             %em Today's learners; tomorrow's Alaska teacher-leaders.
-      %li.grid-item.button
-        = link_to 'Inquire', star_inquire_path, title: ''
+      / %li.grid-item.button
+      /   = link_to 'Inquire', star_inquire_path, title: ''
+      = link_to 'Inquire', star_inquire_path, title: '', class: 'flat-button'
 
 %section.panel#gifts
   .container
@@ -150,5 +151,4 @@
         %p
           We set high expectations and provide high levels of support to our students. Our focus on people results in your success.
           %span
-      .flat-button
-        = link_to 'Inquire', star_inquire_path, title: ''
+      = link_to 'Inquire', star_inquire_path, title: '', class: 'flat-button'

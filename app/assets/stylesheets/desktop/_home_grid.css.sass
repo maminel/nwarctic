@@ -9,6 +9,8 @@
     +breakpoint($desktop)
       padding-left: span(1 of 16 wide)/2
       padding-right: span(1 of 16 wide)/2
+  .flat-button
+    margin-top: 0
 
 .grid-item
   list-style: none
@@ -38,13 +40,13 @@
 // FIXME ccm: CSS precedents is a problem here.
 // Conflicts with typography without #atc/#star.
 // Will also need to move to forms.
-#atc, #star
-  .button
-    position: relative
-    font-weight: 300
-    a
-      position: absolute
-      +link-colors($font-white, $font-white, $font-white, $font-white, $font-white)
+// #atc, #star
+//   .button
+//     position: relative
+//     font-weight: 300
+//     a
+//       position: absolute
+//       +link-colors($font-white, $font-white, $font-white, $font-white, $font-white)
 
 +breakpoint(max-width $tablet)
   #grid ul
@@ -60,12 +62,12 @@
     &:nth-child(7),
     &:nth-child(9)
       display: none
-  .button
-    height: 65px
-    a
-      bottom: 15px
-      right: 25px
-      font-size: 25px
+  // .button
+  //   height: 65px
+  //   a
+  //     bottom: 15px
+  //     right: 25px
+  //     font-size: 25px
 
 +breakpoint($tablet $desktop)
   .grid-item
@@ -79,12 +81,12 @@
     &:nth-child(9),
     &:last-child
       +last
-  .button
-    height: 65px
-    a
-      bottom: 15px
-      right: 25px
-      font-size: 25px
+  // .button
+  //   height: 65px
+  //   a
+  //     bottom: 15px
+  //     right: 25px
+  //     font-size: 25px
 
 +breakpoint($desktop)
   #grid h2
@@ -97,15 +99,14 @@
       font-size: 25px
     &:nth-child(3),
     &:nth-child(6),
-    &:nth-child(9),
-    &:last-child
+    &:nth-child(9)
       +last
-  .button
-    height: 85px
-    a
-      bottom: 22px
-      right: 31px
-      font-size: 30px
+  // .button
+  //   height: 85px
+  //   a
+  //     bottom: 22px
+  //     right: 31px
+  //     font-size: 30px
 
 #atc
   #grid h2
