@@ -1,13 +1,43 @@
 @import "desktop/home_heroes"
 @import "desktop/home_grid"
 
+
 /* ATC
-  -----------------------
+  ============================================================================
+
+
 
 
 
 /* Star
-  -----------------------
+  ============================================================================
 
 @import "desktop/home_gifts"
-@import "desktop/home_revolutionary"
+
+/* Revolutionary
+  -----------------------
+
+#revolutionary
+  +breakpoint($tablet)
+    padding-top: 60px
+
+  +breakpoint($desktop)
+    padding-top: 90px
+
+// FIXME ccm: Could combine with .video-wrapper.
+.video-wrap
+  position: relative
+  padding-bottom: 41.8%
+  height: 0
+  iframe
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
+
+/* Inquire
+  -----------------------
+
+
