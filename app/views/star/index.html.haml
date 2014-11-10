@@ -138,11 +138,14 @@
                 webkitallowfullscreen: '',
                 mozallowfullscreen: '',
                 allowfullscreen: ''}
-      %a{href: '#', title: ''} Learn more about MiniSTAR and ReadySTAR intensive programs
+     %a{href: '#', title: ''} Learn more about MiniSTAR and ReadySTAR intensive programs
 
 %section.panel.star-panel#inquire
   .container
     .inquire
       %blockquote
-        %p We set high expectations and provide high levels of support to our students. Our focus on people results in your success.
-      %button Inquire
+        %p
+          We set high expectations and provide high levels of support to our students. Our focus on people results in your success.
+          %span
+      .flat-button
+        = link_to 'Inquire', star_inquire_path, title: ''
