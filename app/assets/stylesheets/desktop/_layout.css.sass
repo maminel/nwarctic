@@ -138,6 +138,8 @@ header
   +breakpoint($tablet)
     margin-top: 60px
 
+// regular page footers
+
 #atc .footer
   background-color: $color-atc
 
@@ -146,28 +148,28 @@ header
 
 #atc .footer, #star .footer
   padding-bottom: 40px
-  color: $font-white
+  ul, p
+    margin: 0
+    font-size: 14px
+    color: $font-white
   a
     +link-colors($font-white, $font-white, $font-white, $font-white, $font-white)
-  p
-    margin: 0
 
   .info-column
     +span(6 of 6)
     padding-top: 30px
-    font-size: 14px
-    ul
-      margin: 0
-      li
-        display: inline-block
-        padding: 0 5px
-      li:first-child
-        padding-left: 0
+    li
+      display: inline-block
+      padding: 0 5px
+    li:first-child
+      padding-left: 0
     .phone-number, .address
       margin-top: 25px
     .phone-number
       span
         margin-right: 10px
+    .org
+      font-weight: 500
     .adr
       font-weight: 300
 
@@ -183,8 +185,9 @@ header
   .district-column
     +span(6 of 6)
     padding-top: 25px
-    font-size: 9px
-    font-weight: 300
+    p
+      font-weight: 300
+      font-size: 9px
     a
       display: block
       width: 100px

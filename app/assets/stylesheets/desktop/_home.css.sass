@@ -18,11 +18,29 @@
   -----------------------
 
 #revolutionary
+  padding-bottom: 0
+
   +breakpoint($tablet)
     padding-top: 60px
 
   +breakpoint($desktop)
     padding-top: 90px
+
+.revolutionary
+  +breakpoint($desktop)
+    padding-right: span(1 of 16 wide)/2
+    padding-left: span(1 of 16 wide)/2
+
+
+/* Video
+  -----------------------
+
+#video
+  padding-top: 0
+  a
+    display: block
+    margin-left:  span(1 of 16 wide)/2
+    margin-top: 20px
 
 // FIXME ccm: Could combine with .video-wrapper.
 .video-wrap
@@ -40,7 +58,11 @@
 /* Inquire
   -----------------------
 
-#inquire
+.inquire
+  +breakpoint($desktop)
+    padding-right: span(1 of 16 wide)/2
+    padding-left: span(1 of 16 wide)/2
+
   // FIXME ccm: This may become the universal block quote style.
   blockquote
     margin: 0
@@ -94,17 +116,11 @@
 /* Buttons
   -----------------------
 
-.inquire
-  +breakpoint($desktop)
-    padding-right: span(1 of 16 wide)/2
-    padding-left: span(1 of 16 wide)/2
-
 #atc, #star
   // FIXME ccm: Have to use #atc and #star in order to override
   // typography color setting. Not too crazy about that.
 
   // FIXME ccm: This may become universal flat button.
-  // 15 grid issue here as well (see _home_grid).
   .flat-button
     position: relative
     +span(6 of 6)

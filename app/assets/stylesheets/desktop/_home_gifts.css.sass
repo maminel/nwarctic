@@ -26,6 +26,8 @@
 
       +breakpoint($desktop)
         top: 125%
+        left: span(1 of 16 wide)/2
+        margin-left: 10px
         border-top: 60px solid $bg-panel-star
         border-left: 60px solid transparent
         border-right: 60px solid transparent
@@ -33,7 +35,6 @@
 .gifts
   +clearfix
 
-  // FIXME ccm: Revisit design with John...
   // to align careers with preceding grid needed to
   // add padding and use 15 span grid for desktop
   +breakpoint($desktop)
@@ -48,8 +49,6 @@
 
   +breakpoint($desktop)
     +span(8 of 15)
-    // see above note
-    margin-left: -(span(1 of 16 wide)/2)
 
 .careers
   +span(6 of 6)
@@ -74,7 +73,6 @@
       font-size: 20px
 
   +breakpoint($desktop)
-    // see above note
     +span(5 of 15 last)
     li
       margin-bottom: 23px

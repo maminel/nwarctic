@@ -12,7 +12,7 @@
               The best choice
             %br
             %span.thin.fade2
-              for Alaska's forward thinking
+              for Alaska&#146;s forward thinking
               %br
               high school students
       .slide.hero2
@@ -49,7 +49,7 @@
 
 %section.panel#grid
   .container
-    %h2 A unique opportunity for Alaska's students and families.
+    %h2 A unique opportunity for Alaska&#146;s students and families.
     %ul
       %li.grid-item
         .video-wrapper
@@ -130,15 +130,18 @@
     .revolutionary
       %h2 Through a Revolutionary Approach to Education.
       %p We prepare students for high-paying, high demand jobs.
-      .video-wrap
-        %iframe{src: '//player.vimeo.com/video/109784030',
-                width: '1140',
-                height: '477',
-                frameborder: '0',
-                webkitallowfullscreen: '',
-                mozallowfullscreen: '',
-                allowfullscreen: ''}
-      %a{href: '#', title: ''} Learn more about MiniSTAR and ReadySTAR intensive programs
+
+%section.panel#video
+  .container
+    .video-wrap
+      %iframe{src: '//player.vimeo.com/video/109784030',
+              width: '1140',
+              height: '477',
+              frameborder: '0',
+              webkitallowfullscreen: '',
+              mozallowfullscreen: '',
+              allowfullscreen: ''}
+    = link_to 'Learn more about MiniSTAR and ReadySTAR intensive programs', star_programs_path, title: ''
 
 %section.panel.star-panel#inquire
   .container
