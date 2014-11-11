@@ -100,7 +100,7 @@ $('.item-wrapper').hover(
     function() {
         $(this).find('.hover-wrapper').animate({
             left: '0%'
-        }, 500, 'easeInOutExpo' );
+        }, 500, 'easeInOutExpo');
     },function() {
         $(this).find('.hover-wrapper').animate({
             left: '-200%'
