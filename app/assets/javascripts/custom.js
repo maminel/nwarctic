@@ -90,3 +90,20 @@ $(document).ready(function() {
     }
 
 });
+
+
+// ===========================
+// Hover Effect for Grid
+// ===========================
+
+$('.item-wrapper').hover(
+    function() {
+        $(this).find('.hover-wrapper').animate({
+            left: '0%'
+        }, 500, 'easeInOutExpo' );
+    },function() {
+        $(this).find('.hover-wrapper').animate({
+            left: '-200%'
+        }, 500, 'easeInOutExpo');
+    }
+);

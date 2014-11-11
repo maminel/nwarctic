@@ -15,38 +15,42 @@
 .grid-item
   list-style: none
   overflow: hidden
+
 .video-wrapper, .item-wrapper
   position: relative
   padding-bottom: 75%
   height: 0
-  iframe, p
-    position: absolute
-    left: 0
-    width: 100%
 .video-wrapper
   iframe
+    position: absolute
+    left: 0
     top: 0
+    width: 100%
     height: 100%
 .item-wrapper
   p
+    position: absolute
     bottom: 0
+    left: 0
+    width: 100%
     margin: 0
     font-weight: 300
     color: $font-white
   span
     display: block
     font-weight: 500
+.hover-wrapper
+  position: absolute
+  top: 0
+  left: 200%
+  width: 100%
+  height: 100%
+  background: image-url("grid/roll-over.png") 0 0 no-repeat
 
-// FIXME ccm: CSS precedents is a problem here.
-// Conflicts with typography without #atc/#star.
-// Will also need to move to forms.
-// #atc, #star
-//   .button
-//     position: relative
-//     font-weight: 300
-//     a
-//       position: absolute
-//       +link-colors($font-white, $font-white, $font-white, $font-white, $font-white)
+.no-js
+  .hover:hover
+    .hover-wrapper
+      left: 0
 
 +breakpoint(max-width $tablet)
   #grid ul
@@ -62,12 +66,6 @@
     &:nth-child(7),
     &:nth-child(9)
       display: none
-  // .button
-  //   height: 65px
-  //   a
-  //     bottom: 15px
-  //     right: 25px
-  //     font-size: 25px
 
 +breakpoint($tablet $desktop)
   .grid-item
@@ -81,12 +79,6 @@
     &:nth-child(9),
     &:last-child
       +last
-  // .button
-  //   height: 65px
-  //   a
-  //     bottom: 15px
-  //     right: 25px
-  //     font-size: 25px
 
 +breakpoint($desktop)
   #grid h2
@@ -101,12 +93,6 @@
     &:nth-child(6),
     &:nth-child(9)
       +last
-  // .button
-  //   height: 85px
-  //   a
-  //     bottom: 22px
-  //     right: 31px
-  //     font-size: 30px
 
 #atc
   #grid h2
@@ -125,23 +111,3 @@
       background: image-url("grid/writing.jpg") 50% 0 no-repeat
     &:nth-child(9)
       background: image-url("grid/nature.jpg") 50% 0 no-repeat
-
-    &:nth-child(2),
-    &:nth-child(5),
-    &:nth-child(7),
-    &:nth-child(9)
-      position: relative
-      p
-        display: none
-      &:hover
-        p
-          display: block
-          z-index: 2
-        &:after
-          content: ""
-          position: absolute
-          top: 0
-          right: 0
-          bottom: 0
-          left: 0
-          background: image-url("grid/roll-over.png") 0 0 no-repeat

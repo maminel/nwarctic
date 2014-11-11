@@ -70,16 +70,20 @@
                   webkitallowfullscreen: '',
                   mozallowfullscreen: '',
                   allowfullscreen: ''}
-      %li.grid-item
+      %li.grid-item.hover
         .item-wrapper
+          .hover-wrapper
+            %p Something something something.
       %li.grid-item
         .item-wrapper
           %p You can do college and career training at Alaska Technical Center.
       %li.grid-item
         .item-wrapper
           %p Build your education, career and life.
-      %li.grid-item
+      %li.grid-item.hover
         .item-wrapper
+          .hover-wrapper
+            %p Something something something.
       %li.grid-item
         .video-wrapper
           %iframe{src: '//player.vimeo.com/video/111178601',
@@ -89,8 +93,10 @@
                   webkitallowfullscreen: '',
                   mozallowfullscreen: '',
                   allowfullscreen: ''}
-      %li.grid-item
+      %li.grid-item.hover
         .item-wrapper
+          .hover-wrapper
+            %p Something something something.
       %li.grid-item
         .video-wrapper
           %iframe{src: '//player.vimeo.com/video/111178637',
@@ -100,10 +106,11 @@
                   webkitallowfullscreen: '',
                   mozallowfullscreen: '',
                   allowfullscreen: ''}
-      %li.grid-item
+      %li.grid-item.hover
         .item-wrapper
-      %li.grid-item.button
-        = link_to 'Apply', atc_apply_path, title: ''
+          .hover-wrapper
+            %p Something something something.
+      = link_to 'Inquire', star_inquire_path, title: '', class: 'flat-button'
 
 %section.panel.atc-panel#testimonials
   .container
