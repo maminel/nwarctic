@@ -11,3 +11,32 @@
   .container
     .panel-name
       %p (Picsic main video)
+
+%section.panel#panel-name
+  .container
+    .panel-name
+      %h3 Order of Partners
+      %ul
+        %li Teck
+        %li Shell Alaska
+        %li Nova Copper
+        %li Conoco Phillips
+        %li NANA
+        %li NMS
+        %li Maniilaq
+        %li Northwest Arctic Borough
+        %li University of Alaska
+
+      %h3
+        Logos (located in
+        = succeed ')' do
+          %a{href: 'https://www.dropbox.com/sh/aolptos0qb6lbk7/AACU_Ttd6vGnhc9xnP2C2P1Ea?dl=0', title: ''} dropbox
+      = image_tag 'logos/partners/teck.jpg', alt: 'Teck'
+      = image_tag 'logos/partners/shell.jpg', alt: 'Shell Alaska'
+      = image_tag 'logos/partners/nova-copper.jpg', alt: 'Nova Copper'
+      = image_tag 'logos/partners/conoco-phillips.jpg', alt: 'Conoco Phillips'
+      = image_tag 'logos/partners/nana.jpg', alt: 'NANA'
+      = image_tag 'logos/partners/nms.jpg', alt: 'NMS'
+      = image_tag 'logos/partners/maniilaq.jpg', alt: 'Maniilaq'
+      = image_tag 'logos/partners/nwab.jpg', alt: 'Northwest Arctic Borough'
+      = image_tag 'logos/partners/university-of-alaska.jpg', alt: 'University of Alaska'
