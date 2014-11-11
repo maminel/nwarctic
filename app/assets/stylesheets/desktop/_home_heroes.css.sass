@@ -98,6 +98,12 @@
     &:after
       background: image-url("heroes/fade.png") 0 0 repeat-x
 
+.no-js
+  .hero2, .hero3, .hero4
+    +hidden
+    &:after
+      +hidden
+
 #atc
   .hero1, .hero2, .hero3, .hero4
     background-color: #000
@@ -169,6 +175,10 @@
   #atc .swish1
     bottom: 220px
 
+.no-js
+  .fade1, .fade2
+    opacity: 1
+
 .prev-slide, .next-slide
   position: absolute
   top: -145px
@@ -235,6 +245,10 @@
       height: 17px
       margin-right: 11px
       +border-radius(17px)
+
+.no-js
+  .prev-slide, .next-slide, .slider-buttons
+    +hidden
 
 #atc .slider-buttons
   .button
