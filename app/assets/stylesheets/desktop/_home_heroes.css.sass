@@ -117,35 +117,42 @@
     background: image-url("heroes/atc-hero-4.jpg") 50% 0 no-repeat
 
 #star
-  .hero1
-    background: image-url("heroes/star-hero-1-660.jpg") 50% 0 no-repeat
+  .hero1, .hero2, .hero3, .hero4
+    background: image-url("heroes/star-hero-images-660-q40.jpg") 0 0 no-repeat
   .hero2
-    background: image-url("heroes/star-hero-2-660.jpg") 50% 0 no-repeat
+    background-position: -660px 0
   .hero3
-    background: image-url("heroes/star-hero-3-660.jpg") 50% 0 no-repeat
+    background-position: 0 -283px
   .hero4
-    background: image-url("heroes/star-hero-4-old-660.jpg") 50% 0 no-repeat
+    background-position: -660px -283px
+  // .hero1
+  //   background: image-url("heroes/star-hero-1-660.jpg") 50% 0 no-repeat
+  // .hero2
+  //   background: image-url("heroes/star-hero-2-660.jpg") 50% 0 no-repeat
+  // .hero3
+  //   background: image-url("heroes/star-hero-3-660.jpg") 50% 0 no-repeat
+  // .hero4
+  //   background: image-url("heroes/star-hero-4-old-660.jpg") 50% 0 no-repeat
 
   +breakpoint($tablet)
-    .hero1
-      background: image-url("heroes/star-hero-1-980.jpg") 50% 0 no-repeat
+    .hero1, .hero2, .hero3, .hero4
+      background: image-url("heroes/star-hero-images-980-q40.jpg") 0 0 no-repeat
     .hero2
-      background: image-url("heroes/star-hero-2-980.jpg") 50% 0 no-repeat
+      background-position: -980px 0
     .hero3
-      background: image-url("heroes/star-hero-3-980.jpg") 50% 0 no-repeat
+      background-position: 0 -420px
     .hero4
-      background: image-url("heroes/star-hero-4-old-980.jpg") 50% 0 no-repeat
+      background-position: -980px -420px
 
   +breakpoint($desktop)
-    .hero1
-      background: image-url("heroes/star-hero-1.jpg") 50% 0 no-repeat
+    .hero1, .hero2, .hero3, .hero4
+      background: image-url("heroes/star-hero-images-q40.jpg") 0 0 no-repeat
     .hero2
-      background: image-url("heroes/star-hero-2.jpg") 50% 0 no-repeat
+      background-position: -1400px 0
     .hero3
-      background: image-url("heroes/star-hero-3.jpg") 50% 0 no-repeat
+      background-position: 0 -600px
     .hero4
-      background: image-url("heroes/star-hero-4-old.jpg") 50% 0 no-repeat
-
+      background-position: -1400px -600px
 
 .text, .fade1, .fade2, .fade3, .swish1, .swish2
   z-index: 1
