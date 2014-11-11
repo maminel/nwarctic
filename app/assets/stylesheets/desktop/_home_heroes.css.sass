@@ -118,7 +118,7 @@
 
 #star
   .hero1, .hero2, .hero3, .hero4
-    background: image-url("heroes/star-hero-images-660-q40.jpg") 0 0 no-repeat
+    background: image-url("heroes/star-hero-sprite-660-q40.jpg") 0 0 no-repeat
   .hero2
     background-position: -660px 0
   .hero3
@@ -136,7 +136,7 @@
 
   +breakpoint($tablet)
     .hero1, .hero2, .hero3, .hero4
-      background: image-url("heroes/star-hero-images-980-q40.jpg") 0 0 no-repeat
+      background: image-url("heroes/star-hero-sprite-980-q40.jpg") 0 0 no-repeat
     .hero2
       background-position: -980px 0
     .hero3
@@ -146,7 +146,7 @@
 
   +breakpoint($desktop)
     .hero1, .hero2, .hero3, .hero4
-      background: image-url("heroes/star-hero-images-q40.jpg") 0 0 no-repeat
+      background: image-url("heroes/star-hero-sprite-q40.jpg") 0 0 no-repeat
     .hero2
       background-position: -1400px 0
     .hero3
@@ -194,14 +194,14 @@
   z-index: 2
 .prev-slide
   left: 20px
-  background: image-url("arw-l.png") 0 0 no-repeat
+  background: image-url("home-sprite-660.png") 0 -215px no-repeat
   &:hover
-    background-image: image-url("arw-l-ro.png")
+    background-position: 0 -250px
 .next-slide
   right: 20px
-  background: image-url("arw-r.png") 0 0 no-repeat
+  background: image-url("home-sprite-660.png") -35px -215px no-repeat
   &:hover
-    background-image: image-url("arw-r-ro.png")
+    background-position: -35px -250px
 .slider-buttons
   position: absolute
   bottom: 10px
@@ -222,8 +222,14 @@
     top: -230px
   .prev-slide
     left: 25px
+    background: image-url("home-sprite-980.png") -260px -95px no-repeat
+    &:hover
+      background-position: -260px -130px
   .next-slide
     right: 25px
+    background: image-url("home-sprite-980.png") -290px -95px no-repeat
+    &:hover
+      background-position: -290px -130px
   .slider-buttons
     bottom: 25px
     right: 76px
@@ -240,8 +246,14 @@
     top: -315px
   .prev-slide
     left: 50px
+    background: image-url("home-sprite.png") -280px -110px no-repeat
+    &:hover
+      background-position: -280px -150px
   .next-slide
     right: 50px
+    background: image-url("home-sprite.png") -320px -110px no-repeat
+    &:hover
+      background-position: -320px -150px
   .slider-buttons
     bottom: 28px
     right: 85px
@@ -272,4 +284,3 @@
       background: $color-star
   .selected
     background: $color-star
-

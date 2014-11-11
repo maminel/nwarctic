@@ -76,10 +76,13 @@ header
 
 #atc
   .logo
-    background: image-url("logos/atc-logo-125.png") 0 0 no-repeat
+    background: image-url("home-sprite-660.png") 0 0 no-repeat
 
     +breakpoint($tablet)
-      background: image-url("logos/atc-logo.png") 0 0 no-repeat
+      background: image-url("home-sprite-980.png") 0 0 no-repeat
+
+    +breakpoint($desktop)
+      background: image-url("home-sprite.png") 0 0 no-repeat
 
 #star
   .logo
@@ -198,7 +201,7 @@ header
       width: 100px
       height: 102px
       margin-bottom: 25px
-      background: image-url("logos/nwabsd-logo-100.png") 0 0 no-repeat
+      background: image-url("home-sprite-660.png") 0 -75px no-repeat
 
     +breakpoint($tablet)
       +span(4 of 9 last)
@@ -209,11 +212,11 @@ header
         height: 195px
         margin-left: auto
         margin-right: auto
-        background: image-url("logos/nwabsd-logo.png") 0 0 no-repeat
+        background: image-url("home-sprite-980.png") 0 -95px no-repeat
 
     +breakpoint($desktop)
       +span(4 of 16 last)
       a
         width: 191px
         height: 195px
-        background: image-url("logos/nwabsd-logo.png") 0 0 no-repeat
+        background: image-url("home-sprite.png") 0 -110px no-repeat

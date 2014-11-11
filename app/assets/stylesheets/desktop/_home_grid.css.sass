@@ -45,7 +45,6 @@
   left: 200%
   width: 100%
   height: 100%
-  background: image-url("grid/roll-over.png") 0 0 no-repeat
 
 .no-js
   .hover:hover
@@ -79,6 +78,8 @@
     &:nth-child(9),
     &:last-child
       +last
+  .hover-wrapper
+    background: image-url("home-sprite-980.png") 0 -297px no-repeat
 
 +breakpoint($desktop)
   #grid h2
@@ -93,6 +94,8 @@
     &:nth-child(6),
     &:nth-child(9)
       +last
+  .hover-wrapper
+    background: image-url("home-sprite.png") 0 -307px no-repeat
 
 #atc
   #grid h2
@@ -104,10 +107,10 @@
   .grid-item
     background-color: $color-star
     &:nth-child(2)
-      background: image-url("grid/class.jpg") 50% 0 no-repeat
+      background: image-url("grid/grid-sprite-q40.jpg") 50% 0 no-repeat
     &:nth-child(5)
-      background: image-url("grid/team.jpg") 50% 0 no-repeat
+      background: image-url("grid/grid-sprite-q40.jpg") 50% -265px no-repeat
     &:nth-child(7)
-      background: image-url("grid/writing.jpg") 50% 0 no-repeat
+      background: image-url("grid/grid-sprite-q40.jpg") 50% -530px no-repeat
     &:nth-child(9)
-      background: image-url("grid/nature.jpg") 50% 0 no-repeat
+      background: image-url("grid/grid-sprite-q40.jpg") 50% -795px no-repeat
