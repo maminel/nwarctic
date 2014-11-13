@@ -30,19 +30,18 @@
     a
       font-size: 35px
 
-#atc #hero a
-  color: $color-atc
+#atc #hero
+  a
+    color: $color-atc
 
 #star #hero a
   color: $color-star
 
 .iosslider
-  // required
-  position: relative
-  top: 0
-  left: 0
-  overflow: hidden
-  // end
+  position: relative // required
+  top: 0 // required
+  left: 0 // required
+  overflow: hidden // required
   width: 660px
   max-width: 100%
   height: 283px
@@ -50,13 +49,10 @@
   .container
     position: relative
   .slider
-    // required
-    width: 100%
-    height: 100%
+    width: 100% // required
+    height: 100% // required
   .slide
-    // required
-    float: left
-    // end
+    float: left // required
     width: 660px
     height: 283px
     .container
@@ -104,19 +100,29 @@
 
 #atc
   .hero1, .hero2, .hero3, .hero4
-    background-color: #000
-  .hero1
-    background: image-url("heroes/atc-hero-1.jpg") 50% 0 no-repeat
-  .hero2
-    background: image-url("heroes/atc-hero-2.jpg") 50% 0 no-repeat
-  .hero3
-    background: image-url("heroes/atc-hero-3.jpg") 50% 0 no-repeat
-  .hero4
-    background: image-url("heroes/atc-hero-4.jpg") 50% 0 no-repeat
+    background: image-url("heroes/atc-hero-sprite-660-q40.jpg") 0 0 no-repeat
+
+  +breakpoint($tablet)
+    .hero1, .hero2, .hero3, .hero4
+      background: image-url("heroes/atc-hero-sprite-980-q40.jpg") 0 0 no-repeat
+
+  +breakpoint($desktop)
+    .hero1, .hero2, .hero3, .hero4
+      background: image-url("heroes/atc-hero-sprite-q40.jpg") 0 0 no-repeat
 
 #star
   .hero1, .hero2, .hero3, .hero4
     background: image-url("heroes/star-hero-sprite-660-q40.jpg") 0 0 no-repeat
+
+  +breakpoint($tablet)
+    .hero1, .hero2, .hero3, .hero4
+      background: image-url("heroes/star-hero-sprite-980-q40.jpg") 0 0 no-repeat
+
+  +breakpoint($desktop)
+    .hero1, .hero2, .hero3, .hero4
+      background: image-url("heroes/star-hero-sprite-q40.jpg") 0 0 no-repeat
+
+#atc, #star
   .hero2
     background-position: -660px 0
   .hero3
@@ -125,8 +131,6 @@
     background-position: -660px -283px
 
   +breakpoint($tablet)
-    .hero1, .hero2, .hero3, .hero4
-      background: image-url("heroes/star-hero-sprite-980-q40.jpg") 0 0 no-repeat
     .hero2
       background-position: -980px 0
     .hero3
@@ -135,8 +139,6 @@
       background-position: -980px -420px
 
   +breakpoint($desktop)
-    .hero1, .hero2, .hero3, .hero4
-      background: image-url("heroes/star-hero-sprite-q40.jpg") 0 0 no-repeat
     .hero2
       background-position: -1400px 0
     .hero3
@@ -169,8 +171,6 @@
     bottom: 50px
   .swish1
     bottom: 111px
-  #atc .swish1
-    bottom: 220px
 
 .no-js
   .fade1, .fade2
@@ -184,12 +184,12 @@
   z-index: 2
 .prev-slide
   left: 20px
-  background: image-url("home-sprite-660.png") 0 -215px no-repeat
+  background: image-url("star-home-sprite-660.png") 0 -215px no-repeat
   &:hover
     background-position: 0 -250px
 .next-slide
   right: 20px
-  background: image-url("home-sprite-660.png") -35px -215px no-repeat
+  background: image-url("star-home-sprite-660.png") -35px -215px no-repeat
   &:hover
     background-position: -35px -250px
 .slider-buttons
@@ -212,12 +212,12 @@
     top: -230px
   .prev-slide
     left: 25px
-    background: image-url("home-sprite-980.png") -260px -95px no-repeat
+    background: image-url("star-home-sprite-980.png") -260px -95px no-repeat
     &:hover
       background-position: -260px -130px
   .next-slide
     right: 25px
-    background: image-url("home-sprite-980.png") -290px -95px no-repeat
+    background: image-url("star-home-sprite-980.png") -290px -95px no-repeat
     &:hover
       background-position: -290px -130px
   .slider-buttons
@@ -236,12 +236,12 @@
     top: -315px
   .prev-slide
     left: 50px
-    background: image-url("home-sprite.png") -280px -110px no-repeat
+    background: image-url("star-home-sprite.png") -280px -110px no-repeat
     &:hover
       background-position: -280px -150px
   .next-slide
     right: 50px
-    background: image-url("home-sprite.png") -320px -110px no-repeat
+    background: image-url("star-home-sprite.png") -320px -110px no-repeat
     &:hover
       background-position: -320px -150px
   .slider-buttons

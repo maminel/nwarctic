@@ -62,13 +62,9 @@ header
 .logo
   display: block
   float: left
-  width: 125px
-  height: 68px
   margin: 20px 0 0 10px
 
   +breakpoint($tablet)
-    width: 190px
-    height: 103px
     margin: 25px 0 0 40px
 
   +breakpoint($desktop)
@@ -76,20 +72,31 @@ header
 
 #atc
   .logo
-    background: image-url("home-sprite-660.png") 0 0 no-repeat
+    width: 125px
+    height: 68px
+    background: image-url("atc-home-sprite-660.png") 0 0 no-repeat
 
     +breakpoint($tablet)
-      background: image-url("home-sprite-980.png") 0 0 no-repeat
+      width: 186px
+      height: 108px
+      background: image-url("atc-home-sprite-980.png") 0 0 no-repeat
 
     +breakpoint($desktop)
-      background: image-url("home-sprite.png") 0 0 no-repeat
+      background: image-url("logos/atc-logo.png") 0 0 no-repeat
 
 #star
   .logo
-    background: image-url("logos/star-logo-125.png") 0 0 no-repeat
+    width: 125px
+    height: 68px
+    background: image-url("star-home-sprite-660.png") 0 0 no-repeat
 
     +breakpoint($tablet)
-      background: image-url("logos/star-logo.png") 0 0 no-repeat
+      width: 190px
+      height: 103px
+      background: image-url("star-home-sprite-980.png") 0 0 no-repeat
+
+    +breakpoint($desktop)
+      background: image-url("star-home-sprite.png") 0 0 no-repeat
 
 
 /* Panels
@@ -109,12 +116,13 @@ header
     padding: 50px 0
 
 // FIXME ccm: Temporary.
-
 .star-panel
-  background-color: $bg-star-panel
+  border-top: 10px solid #000
+  border-bottom: 10px solid #000
 
 .atc-panel
-  background-color: $bg-atc-panel
+  border-top: 10px solid #000
+  border-bottom: 10px solid #000
 
 
 /* Splash Footer
@@ -201,7 +209,7 @@ header
       width: 100px
       height: 102px
       margin-bottom: 25px
-      background: image-url("home-sprite-660.png") 0 -75px no-repeat
+      background: image-url("star-home-sprite-660.png") 0 -75px no-repeat
 
     +breakpoint($tablet)
       +span(4 of 9 last)
@@ -212,11 +220,11 @@ header
         height: 195px
         margin-left: auto
         margin-right: auto
-        background: image-url("home-sprite-980.png") 0 -95px no-repeat
+        background: image-url("star-home-sprite-980.png") 0 -95px no-repeat
 
     +breakpoint($desktop)
       +span(4 of 16 last)
       a
         width: 191px
         height: 195px
-        background: image-url("home-sprite.png") 0 -110px no-repeat
+        background: image-url("star-home-sprite.png") 0 -110px no-repeat
