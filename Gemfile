@@ -13,6 +13,8 @@ gem 'sdoc',         '0.4.0', group: :doc
 
 gem 'haml-rails'
 gem 'mobvious'
+gem 'mail_form'
+gem 'simple_form'
 gem 'mobvious-rails'
 
 # Compass specific gems.

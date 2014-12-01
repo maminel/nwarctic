@@ -17,6 +17,7 @@ class StarController < ApplicationController
   end
 
   def inquire
+    @contact = Contact.new
   end
 
   def for_me
