@@ -1,6 +1,6 @@
 class StarController < ApplicationController
   layout 'star/star_layout'
-
+ @inquire = Inquire.new
   def index
   end
 
@@ -17,7 +17,15 @@ class StarController < ApplicationController
   end
 
   def inquire
-    @contact = Contact.new
+    @inquire = Inquire.new
+    @inquire = Inquire.new(params[:inquire])
+    @inquire.request = request
+    if @inquire.deliver
+      flash.now[:notice] = 'Thank you for your message. We will inquire you soon!'
+    else
+      flash.now[:error] = 'Cannot send message.'
+      render :inquire
+    end
   end
 
   def for_me
